@@ -7,6 +7,14 @@
     <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.13.11/katex.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.13.11/katex.min.js"></script>
+    <script>
+        // use KaTeX to render all .math elements
+        document.addEventListener("DOMContentLoaded", function() {
+            document.querySelectorAll(".math").forEach(function(e) {
+                katex.render(e.innerHTML, e, { displayMode: false });
+            });
+        });
+    </script>
 </head>
 <body>
 
@@ -84,9 +92,9 @@
 
         </div>
         <div class="note-box" title = "x-t Graph">
-            <div class="note-title note-element">x-t Graph</div>
+            <div class="note-title note-element">Position-Time (x-t) Graph</div>
             <div class="note-element">
-                x-t graph is used to show the position of an object over time.
+                Position-Time (x-t) graph is used to show the position of an object over time.
             </div>
             <div class="note-element note-answer-box medium">
 
@@ -163,13 +171,6 @@
             </div>
         </div>
     </div>
-    <script>
-        // use KaTeX to render all .math elements
-        document.addEventListener("DOMContentLoaded", function() {
-            document.querySelectorAll(".math").forEach(function(e) {
-                katex.render(e.innerHTML, e, { displayMode: false });
-            });
-        });
-    </script>
+    
 </body>
 </html>
