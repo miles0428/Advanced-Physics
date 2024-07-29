@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AP-03: Motion Along a Straight Line : Instaneous velocity and acceleration</title>
+    <meta name="description" content="AP-03: Motion Along a Straight Line : Instantaneous Velocity and Acceleration" title="AP-03"> 
+    <meta name="author" content="YC Chung" title="YC Chung">    
+    <title>AP-03: Motion Along a Straight Line : Instantaneous Velocity and Acceleration</title>
     <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.13.11/katex.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.13.11/katex.min.js"></script>
@@ -11,124 +13,102 @@
         // use KaTeX to render all .math elements
         document.addEventListener("DOMContentLoaded", function() {
             document.querySelectorAll(".math").forEach(function(e) {
-                katex.render(e.innerHTML, e, { displayMode: false});
+                katex.render(e.innerHTML, e, { displayMode: false });
             });
         });
     </script>
 </head>
 <body>
-    <div class="unit" title="Motion Along a Straight Line : Instaneous velocity and acceleration">
-        <div class="title">Motion Along a Straight Line : Instaneous velocity and acceleration</div>
+    <div class="unit" title="Motion Along a Straight Line: Instantaneous Velocity and Acceleration">
+        <div class="title">Motion Along a Straight Line: Instantaneous Velocity and Acceleration</div>
         <div class="note-box" title="Instantaneous Velocity">
-            <div class="note-title note-element">
-                Instantaneous Velocity
-            </div>
+            <div class="note-title note-element">Instantaneous Velocity</div>
             <div class="note-element">
-                The instantaneous velocity of an object is the velocity of the object at a specific instant of time. In other words, it is the average velocity over an infinitesimally small time interval.So the instantaneous velocity can be write as the derivative of the position function with respect to time.
+                The instantaneous velocity of an object is the velocity of the object at a specific instant of time. In other words, it is the average velocity over an infinitesimally small time interval. So the instantaneous velocity can be written as the derivative of the position function with respect to time.
             </div>
             <div class="formula note-element">
-                <span class="math">
-                    v = \lim_{\Delta t \to 0} \frac{\Delta x}{\Delta t} = \frac{dx}{dt}
-                </span>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                (1)
+                <span class="math">v = \lim_{\Delta t \to 0} \frac{\Delta x}{\Delta t} = \frac{dx}{dt}</span>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (1)
             </div>
             <div class="note-element">
                 From (1), we can also notice that the instantaneous velocity is the slope of the position-time graph at a specific instant of time.
             </div>
-            <div class="note-element note-subtitle">
-                Position-Time (x-t) Graph and Velocity-Time (v-t) Graph
-            </div>
+            <div class="note-element note-subtitle">Position-Time (x-t) Graph and Velocity-Time (v-t) Graph</div>
             <div class="note-element note-answer-box" style="height: 200px;"></div>
         </div>
         <div class="note-box" title="Sample Problem #1">
             <div class="note-title note-element">Sample Problem #1</div>
             <div class="note-element">
-                A car is moving along a straight line. The position of the car is given by the function <span class="math"> x(t) = 2t^2 + 3t + 1</span> (the Length unit is m and the time unit is s).
+                A car is moving along a straight line. The position of the car is given by the function <span class="math">x(t) = 2t^2 + 3t + 1</span> (the length unit is m and the time unit is s).
                 <br>
-                (a) Find the average velocity of the car over the time interval <span class="math"> 1 \leq t \leq 3</span>.
-            <br>
-                (b) Find the velocity of the car at time <span class="math"> t = 2</span>. 
+                (a) Find the average velocity of the car over the time interval <span class="math">1 \leq t \leq 3</span>.
+                <br>
+                (b) Find the velocity of the car at time <span class="math">t = 2</span>.
             </div>
             <div class="note-element note-answer-box small question"></div>
         </div>
         <div class="note-box" title="Acceleration">
             <div class="note-title note-element">Acceleration</div>
             <div class="note-element">
-                In physics, <span class="highlight">acceleration describes the rate at which an object's velocity changes over time</span>, ( or in other words, how quickly the object speeds up or slows down). For example, if a car speeds up, we will say that the car has an acceleration to make it move faster, and if a car slows down, we will say that the car has an acceleration to make it buffer.
+                In physics, <span class="highlight">acceleration describes the rate at which an object's velocity changes over time</span> (or in other words, how quickly the object speeds up or slows down). For example, if a car speeds up, we will say that the car has an acceleration to make it move faster, and if a car slows down, we will say that the car has an acceleration to make it buffer.
             </div>
-            <div class="note-element note-subtitle">
-                Average Acceleration and Instantaneous Acceleration
-            </div>
+            <div class="note-element note-subtitle">Average Acceleration and Instantaneous Acceleration</div>
             <div class="note-element">
                 In the same way as velocity, we can define the average acceleration and instantaneous acceleration. The average acceleration is the change in velocity over a period time interval, and the instantaneous acceleration is the acceleration at a specific instant of time.
             </div>
             <div class="note-element">
-                The average acceleration <span class="math"> a_{avg}</span> can be defined as the change in velocity <span class="math"> \Delta v</span> over the change in time <span class="math"> \Delta t</span>.
+                The average acceleration <span class="math">a_{avg}</span> can be defined as the change in velocity <span class="math">\Delta v</span> over the change in time <span class="math">\Delta t</span>.
             </div>
             <div class="formula note-element">
-                <span class="math">
-                    a_{avg} = \frac{v_1 - v_0}{t_1 - t_0}{} = \frac{\Delta v}{\Delta t} 
-                </span>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                (2)
+                <span class="math">a_{avg} = \frac{v_1 - v_0}{t_1 - t_0} = \frac{\Delta v}{\Delta t}</span>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (2)
             </div>
             <div class="note-element">
                 From (2), we can easily find that the instantaneous acceleration is the derivative of the velocity function with respect to time.
             </div>
             <div class="formula note-element">
-                <span class="math">
-                    a = \lim_{\Delta t \to 0} \frac{\Delta v}{\Delta t} = \frac{dv}{dt}
-                </span>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                (3)
+                <span class="math">a = \lim_{\Delta t \to 0} \frac{\Delta v}{\Delta t} = \frac{dv}{dt}</span>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (3)
             </div>
         </div>
         <div class="note-box" title="Relation between Position and Acceleration">
             <div class="note-title note-element">Relation between Position and Acceleration</div>
             <div class="note-element">
-                from (1) and (3), we can find the relation between position and acceleration. The acceleration is the derivative of the velocity function, and the velocity is the derivative of the position function. We can easily find the acceleration is the second order derivative of the position function.
+                From (1) and (3), we can find the relation between position and acceleration. The acceleration is the derivative of the velocity function, and the velocity is the derivative of the position function. We can easily find the acceleration is the second-order derivative of the position function.
             </div>
-            <div class=" note-element formula">
-                <span class="math">
-                    a = \frac{dv}{dt} = \frac{d}{dt} \left( \frac{dx}{dt} \right) = \frac{d^2x}{dt^2}
-                </span>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                (4)
+            <div class="note-element formula">
+                <span class="math">a = \frac{dv}{dt} = \frac{d}{dt} \left( \frac{dx}{dt} \right) = \frac{d^2x}{dt^2}</span>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (4)
             </div>
-            <div class="note-element note-subtitle">
-                x-t Graph, v-t Graph, and a-t Graph
-            </div>
-
+            <div class="note-element note-subtitle">x-t Graph, v-t Graph, and a-t Graph</div>
             <div class="note-element note-answer-box small" style="height: 220px;"></div>
         </div>
-        <div class="note-box" title="Dimension and Units of Acceleration and Velocity" >
+        <div class="note-box" title="Dimension and Units of Acceleration and Velocity">
             <div class="note-title note-element">Dimension and Units of Acceleration and Velocity</div>
             <div class="note-element">
-                In physics, the dimension of a physical quantity is the expression of the physical quantity in terms of the base quantities. Usually, It can be used to check if the physical quantity is correct. 
+                In physics, the dimension of a physical quantity is the expression of the physical quantity in terms of the base quantities. Usually, it can be used to check if the physical quantity is correct.
             </div>
             <div class="note-element">
-                The dimension of velocity is <span class="math"> [v] = \rm{{L}{T^{-1}}}</span>, where <span class="math"> \rm{L}</span> is the length and <span class="math"> \rm{T}</span> is the time. In SI units, the unit of velocity is <span class="math"> \rm{m/s}</span>.
-                The dimension of acceleration is <span class="math"> [a] = {[v]}/{[t]} = \rm{LT^{-2}}</span>. In SI units, the unit of acceleration is <span class="math"> \rm{m/s^2}</span>.
+                The dimension of velocity is <span class="math">[v] = \rm{LT^{-1}}</span>, where <span class="math">\rm{L}</span> is the length and <span class="math">\rm{T}</span> is the time. In SI units, the unit of velocity is <span class="math">\rm{m/s}</span>. The dimension of acceleration is <span class="math">[a] = \frac{[v]}{[t]} = \rm{LT^{-2}}</span>. In SI units, the unit of acceleration is <span class="math">\rm{m/s^2}</span>.
             </div>
             <div class="note-element note-alert">
                 <div class="note-element">
-                    If you want to check if your answer is correct, you can check the dimension of the answer. For example, if you find the acceleration is <span class="math"> \frac{{v_1}{v_2}}{{t_1}}</span>, the dimension of this expression is <span class="math"> \rm{{L^2}{T^{-3}}}</span>, which is not the dimension of acceleration, so your answer is wrong.
+                    If you want to check if your answer is correct, you can check the dimension of the answer. For example, if you find the acceleration is <span class="math">\frac{v_1v_2}{t_1}</span>, the dimension of this expression is <span class="math">\rm{L^2T^{-3}}</span>, which is not the dimension of acceleration, so your answer is wrong.
                 </div>                
             </div>
-        </div>          
+        </div>            
         <div class="note-box" title="Sample Problem #2">
             <div class="note-title note-element">Sample Problem #2</div>
             <div class="note-element">
-                A particle moves along a straight line. The position of the particle is given by the function <span class="math"> x(t) = (t-2)^3 -3t -5 </span>. Answer the following questions:<br>
-                (a) Write down the velocity function <span class="math"> v(t)</span> and acceleration function <span class="math"> a(t)</span>.<br>
+                A particle moves along a straight line. The position of the particle is given by the function <span class="math"> x(t) = (t-2)^3 - 3t - 5 </span>. Answer the following questions:<br>
+                (a) Write down the velocity function <span class="math"> v(t)</span> and the acceleration function <span class="math"> a(t)</span>.<br>
                 (b) Draw the position-time graph, velocity-time graph, and acceleration-time graph.<br>
                 (c) When is the particle at rest?<br>
                 (d) Find the average velocity of the particle over the time interval <span class="math"> 1 \leq t \leq 3</span>.<br>
-                (e) When is the particle have an zero acceleration?<br>
+                (e) When does the particle have zero acceleration?<br>
             </div>
             <div class="note-element note-answer-box large question"></div>
-        </div>
+        </div>        
     </div>
     <div class="unit" title="Excercises">
         <div class="title">Excercises</div>
@@ -180,23 +160,21 @@
             <div class="note-element note-answer-box">
                 (a)
                 The average velocity over a time interval can be calculated by the formula <span class="math"> v_{avg} = \frac{\Delta x}{\Delta t}</span>.
-                <br>
-                <br>
+                <br><br>
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <span class="math"> x_{t=1} = 6 , x_{t=3} = 28 \Rightarrow v_{avg} = \frac{\Delta x}{\Delta t} = \frac{28-6}{3-1} = 11 \rm{\ (m/s)} </span>
-                <br>
-                <br>
+                <span class="math"> x_{t=1} = 6 , x_{t=3} = 28 \Rightarrow v_{avg} = \frac{\Delta x}{\Delta t} = \frac{28-6}{3-1} = 11 \, \rm{(m/s)} </span>
+                <br><br>
                 (b)
-                We can find the <span> v(t)</span> by the formula <span class="math"> v(t) = \frac{dx}{dt}</span>.
-                <br>
-                <br>
+                We can find <span> v(t)</span> by the formula <span class="math"> v(t) = \frac{dx}{dt}</span>.
+                <br><br>
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <span class = 'math'>
-                        v(t) = \frac{dx}{dt} = \frac{d}{dt} \left( 2t^2 + 3t + 1 \right) = 4t + 3 
-                        \Rightarrow
-                        v(2) = 4(2) + 3 = 11 \rm{\ (m/s)}
+                <span class="math">
+                    v(t) = \frac{dx}{dt} = \frac{d}{dt} \left( 2t^2 + 3t + 1 \right) = 4t + 3 
+                    \Rightarrow
+                    v(2) = 4(2) + 3 = 11 \, \rm{(m/s)}
                 </span>
             </div>
+            
         </div>
         <div class="note-box" title="Sample Problem #2">
             <div class="note-title note-element">Sample Problem #2</div>
@@ -212,58 +190,51 @@
                 <div class="note-subbox">
                     <div>
                         (a) The velocity function <span class="math"> v(t)</span> can be calculated by the formula <span class="math"> v(t) = \frac{dx}{dt}</span>.
-                        <br>
-                        <br>
+                        <br><br>
                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        <span class = 'math'>
-                                v(t) = \frac{dx}{dt} = \frac{d}{dt} \left( \left( t- 2 \right)^3 -3t -5 \right) = 3(t-2)^2 - 3
+                        <span class="math">
+                            v(t) = \frac{dx}{dt} = \frac{d}{dt} \left( \left( t- 2 \right)^3 -3t -5 \right) = 3(t-2)^2 - 3
                         </span>
-                        <br>
-                        <br>
+                        <br><br>
                         &nbsp;&nbsp;&nbsp;&nbsp;
-                        The Acceleration function <span class="math"> a(t)</span> can be calculated by the formula <span class="math"> a(t) = \frac{dv}{dt}</span>.
-                        <br>
-                        <br>
+                        The acceleration function <span class="math"> a(t)</span> can be calculated by the formula <span class="math"> a(t) = \frac{dv}{dt}</span>.
+                        <br><br>
                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        <span class = 'math'>
-                                a(t) = \frac{dv}{dt} = \frac{d}{dt} \left( 3\left( t-2\right) ^2 - 3 \right) = 6(t-2)
+                        <span class="math">
+                            a(t) = \frac{dv}{dt} = \frac{d}{dt} \left( 3\left( t-2\right) ^2 - 3 \right) = 6(t-2)
                         </span>
-                        <br>
-                        <br>
+                        <br><br>
                         (b) The position-time graph, velocity-time graph, and acceleration-time graph are shown on the right.
                         <br>
-                        (c) The particle is at rest means the velocity of the particle is zero.
-                        <br>
-                        <br>
+                        (c) The particle is at rest when the velocity of the particle is zero.
+                        <br><br>
                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        <span class = 'math'>
-                                3(t-2)^2 - 3 = 0 \Rightarrow t = 3
+                        <span class="math">
+                            3(t-2)^2 - 3 = 0 \Rightarrow t = 3
                         </span>
-                        <br>
-                        <br>
+                        <br><br>
                     </div>
                     <div>
-                        <br>
-                        <br>
+                        <br><br>
                         <img src="AP-03-01.png" class="note-img" height="300">
                     </div>
-                    
                 </div>
-                (d) The average Acceleration over a time interval can be shown as the formula <span class="math"> a_{avg} = \frac{\Delta v}{\Delta t}</span>.
+                (d) The average acceleration over a time interval can be shown by the formula <span class="math"> a_{avg} = \frac{\Delta v}{\Delta t}</span>.
                 <br><br>
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <span class = 'math'>
-                        v_1 = 0, v_3 = 0 \Rightarrow a_{avg} = \frac{\Delta v}{\Delta t} = \frac{0-0}{3-1} = 0
+                <span class="math">
+                    v_1 = 0, v_3 = 0 \Rightarrow a_{avg} = \frac{\Delta v}{\Delta t} = \frac{0-0}{3-1} = 0
                 </span>
                 <br><br>
-                (e) The particle has zero acceleration means the acceleration of the particle is zero. So we can find the time when the acceleration is zero by the equation <span class="math"> a(t) = 0</span>.
+                (e) The particle has zero acceleration when the acceleration of the particle is zero. So we can find the time when the acceleration is zero by the equation <span class="math"> a(t) = 0</span>.
                 <br><br>
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <span class = 'math'>
-                        6(t-2) = 0 \Rightarrow t = 2
+                <span class="math">
+                    6(t-2) = 0 \Rightarrow t = 2
                 </span>
             </div>
-        </div>          
+        </div>
+               
         <div class="note-box" title="Excercise #1 [halliday 2.16]">
             <div class = "note-title note-element">
                 Excercise #1 [halliday 2.16]
