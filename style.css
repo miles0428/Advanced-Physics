@@ -25,7 +25,9 @@ body{
 }
 
 .unit{
-    page-break-before: always;}
+    page-break-before: always;
+    counter-reset: formula-counter;
+    width: 100%;}
 
 .note-box{
     background-color: white;
@@ -49,6 +51,8 @@ body{
 .note-subbox{
     display: flex;
     flex-direction: row;
+    width: 100%;
+    height: 100%;
 }   
 
 .note-subtitle{
@@ -95,8 +99,11 @@ body{
 .note-answer-box.large{
     height: 350px;
 }
+.note-answer-box.large-400{
+    height: 400px;
+}
 .note-answer-box.XL{
-    height: 800px;
+    height: 900px;
 }
 .note-answer-box.question:before{
     content: "Sol .";
@@ -122,6 +129,26 @@ body{
     border: #aeaeae 2px solid;
     border-radius: 10px;
     padding: 5px;
+    position: relative;
+}
+
+.formula.counter::after{
+    content: "("counter(formula-counter)")";
+    counter-increment: formula-counter 1;
+
+}
+
+.formula.id::after{
+    content: "("attr(id)")";
+
+}
+
+.formula::after{
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 0.8em;
 }
 
 em{
@@ -134,7 +161,7 @@ em{
 .em2{
     color: #5252FF;
 }
-em3{
+.em3{
     color: #52FF52;
 }
 
