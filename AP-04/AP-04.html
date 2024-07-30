@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AP-04: Motion Along a Straight Line : Constant Acceleration " title="AP-03"> 
+    <meta name="author" content="YC Chung" title="YC Chung">    
+    <title>AP-04: Motion Along a Straight Line : Constant Acceleration</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.13.11/katex.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.13.11/katex.min.js"></script>
+    <script>
+        // use KaTeX to render all .math elements
+        document.addEventListener("DOMContentLoaded", function() {
+            document.querySelectorAll(".math").forEach(function(e) {
+                katex.render(e.textContent, e, { displayMode: false });
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="unit" title="Motion Along a Straight Line: Constant Acceleration">
+        <div class="title">Motion Along a Straight Line: Constant Acceleration</div>
+        <div class="note-box" title ="Constant Acceleration">
+            <div class="note-element note-title" title="Constant Acceleration">
+                Constant Acceleration
+            </div>
+            <div class="note-element">
+                If an object moves along a straight line and its acceleration is constant, we can say that the object has constant acceleration.
+            </div>
+        </div>
+        <div class="note-box" title="Integrate relation between velocity and acceleration">
+            <div class = "note-element note-title">
+                Integrate Relation of Velocity and Acceleration
+            </div>
+            <div class="note-element">
+                Recalling that acceleration is the rate of change of velocity, shown as below, where <span class="math">a</span> is acceleration, <span class="math">v</span> is velocity, and <span class="math">t</span> is time.
+            </div>
+            <div class="note-element formula counter" > 
+                <span class="math">a = \frac{dv}{dt}</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+            </div>
+            <div class="note-element">
+                We can easily rewrite the equation (1) as Integrate relation of velocity and acceleration.
+            </div>
+            <div class="note-element formula counter">
+                <span class="math"> v = \int adt</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+            </div>
+            <div class="note-element">
+                As acceleration is constant, we can take it out of the integral sign.
+            </div>
+            <div class="note-element formula counter">
+                <span class="math"> v = a \int dt = at + c</span>
+            </div>
+            <div class="note-element">
+                When <span class="math"> t= 0 </span>,
+            </div>
+            <div class="note-element formula counter">
+                <span class="math"> v_0 = a \cdot 0 + c = c</span>
+            </div>
+            <div class="note-element">
+                Finally, we get the equation of velocity as a function of time.
+            </div>
+            <div class="note-element formula counter">
+                <span class="math em1"> v(t) = v_0+ at </span> 
+            </div>
+        </div>
+        <div class="note-box" title="Sample Problem #1">
+            <div class="note-subbox">
+                <div>
+                    <div class="note-title note-element">Sample Problem #1</div>
+                    <div class="note-element">
+                        Consider a car that moves along a straight line with a constant acceleration of <span class="math"> a = 8 \ \rm{m/s^2}</span>. At <span class="math"> t = 2 \ \rm{s} </span>, we find that the velocity of the car is <span class="math"> 13 \ \rm{m/s}</span>. Find the initial velocity of the car at <span class="math"> t = 0 \ \rm{s}</span>.
+                    </div>
+                </div>
+                <div class="note-element note-answer-box small question" style="width:150%;"></div>
+            </div>
+            
+        </div>
+        <div class="note-box" title="Integrate relation of position and velocity">
+            <div class="note-element note-title">
+                Integrate Relation of Position and Velocity
+            </div>
+            <div class="note-element ">
+                Similarly, we can integrate the relation of position and velocity.
+            </div>
+            <div class="note-element formula counter">
+                <span class="math"> x = \int vdt</span>
+            </div>
+            <div class="note-element">
+                Putting (5) into (6), we get
+            </div>
+            <div class="note-element formula counter">
+                <span class="math"> x = \int (v_0+at)dt = v_0t + \frac{1}{2}at^2 + c</span>
+            </div>
+            <div class="note-element">
+                If we consider <span class="math"> x = x_0 </span> at <span class="math"> t = 0</span>, we can easily get
+            </div>
+            <div class="note-element formula counter">
+                <span class="math"> x_0 = 0 + 0 + c </span>
+            </div>
+            <div class="note-element">
+                and finally we get the equation of position as a function of time.
+            </div>
+            <div class="note-element formula counter">
+                <span class="math em1">   x(t) =x_0+ v_0t + \frac{1}{2}at^2</span>
+            </div>
+            or
+            <div class="note-element formula id " id="9">
+                <span class="math em1"> \Delta x = v_0t + \frac{1}{2}at^2</span>
+            </div>
+            if we use (9) to rewrite (5), we get
+            <div class="note-element formula counter">
+                <span class="math"> {\text{(5)}}^2 \Rightarrow v^2 = v_0^2 + 2atv_0 + a^2t^2 = v_0^2 + 2(v_0t+\frac{1}{2}at^2) = v_0^2 + 2a\Delta x</span>
+            </div>
+        </div>
+        <div class="note-box" title = "Graphic Analysis">
+            <div class="note-element note-title">
+                Graphic Analysis
+            </div>
+            <div class="note-element">
+                In some cases, we can use the graphical analysis to help us understand how the position ,velocity and acceleration are related.
+                For example, if we want to know the position of an object at a certain time but the velocity and the acceleration are an complicated function, we can use the graphical analysis to help us.
+            </div>
+            <div class="note-element note-answer-box medium" style="height: 280px;"> 
+
+            </div>
+        </div>
+        <div class="note-box" title="Sample Problem #2">
+            <div class="note-element note-title">
+                Sample Problem #2
+            </div>
+            <div class="note-element">
+                Two people are traveling on a straight road by car and train. Both train and car have constant acceleration until they reach their greatest velocities, and they start with zero velocity. The acceleration of the car is <span class="math">a = 6 \ \rm{m/s^2}</span>, and the acceleration of the train is <span class="math">a = 5 \ \rm{m/s^2}</span>. The greatest velocity of the car is <span class="math">v = 30 \ \rm{m/s}</span>, and the greatest velocity of the train is <span class="math">v = 40 \ \rm{m/s}</span>. Answer the following questions:
+                (a) Which vehicle is leading at <span class="math"> t= 3 \ \rm{s}</span>?
+                (b) Will another vehicle catch up? If so, when?
+            </div>
+            <div class="note-element note-answer-box large question" ></div>
+        </div>                
+        <div class="note-box" title="Free fall">
+            <div class="note-element note-title">
+                Free fall
+            </div>
+            <div class="note-element">
+                Free fall is the process of an object falling from rest under the influence of gravity, where the acceleration due to gravity is constant and equals to <span class="math"> g = 9.8 \ \rm{m/s^2}</span>.
+            </div>
+            <div class="note-element note-subtitle">
+                Example: Drop a Ball From a Height of <span class="math"> {H} </span>.
+            </div>
+            <div class="note-element ">
+                Assuming up is in the positive direction, since the acceleration due to gravity is <span class="math"> -g</span>, we can easily find the relation between height and time by using formula (9) (<span class="math"> v_0 = 0 </span> because the object is dropped from rest).
+            </div>
+            <div class="note-element formula counter">
+                <span class="math em1"> y(t) = H - \frac{1}{2}gt^2 </span>
+            </div>
+            <div class="note-element">
+                We can also find the velocity-height relation from (10).
+            </div>
+            <div class="note-element formula counter">
+                <span class="math em1"> \rm{(5)}\rm{(10)} \Rightarrow \left\{ \begin{array}{rcl}
+                    v(t) = -gt \\
+                    t= \sqrt{2(H - y)/g}
+                    \end{array}\right.
+                </span>
+                <span class="math em1">
+                    \Rightarrow v = -  \sqrt{2g(H - y)}
+                </span>
+            </div>
+
+        </div>
+        <div class="note-box" title="Sample Problem #3">
+            <div class="note-element note-title">
+                Sample Problem #3
+            </div>
+            <div class="note-element">
+                Assume that the constant acceleration of gravity is <span class="math"> g = 9.8 \ \rm{m/s^2}</span>,if we throw a ball vertically from the ground with initial velocity <span class="math"> v_0 = 29.4 \ \rm{m/s}</span>, answer the following questions:
+                (a) What is the height and velocity of the ball at <span class="math"> t = 2 \ \rm{s}</span>?
+                (b) What is the maximum height of the ball? When does it reach that height?
+                (c) When does the ball hit the ground?
+            </div>
+            <div class="note-element note-answer-box large question" ></div>
+    </div>
+    <div class="unit" title="Exercises">
+        <div class="title">Exercises</div>
+        <div class="note-box" title="Excercise #1">
+            <div class="note-title note-element">
+                Excercise #1 [halliday 2.34]
+            </div>  
+            <div class="note-element note-answer-box question large"></div>
+        </div>
+        <div class="note-box" title="Excercise #2">
+            <div class="note-title note-element">
+                Excercise #2 [halliday 2.36]
+            </div>  
+            <div class="note-element note-answer-box question large"></div>
+        </div>
+        <div class="note-box" title="Excercise #3">
+            <div class="note-title note-element">
+                Excercise #3 [halliday 2.53]
+            </div>  
+            <div class="note-element note-answer-box question large" style ="height: 400px;"></div>
+        </div>
+        <div class="note-box" title="Excercise #4">
+            <div class="note-title note-element">
+                Excercise #4 [halliday 2.56]
+            </div>  
+            <div class="note-element note-answer-box question large-400"  ></div>
+        </div>
+        <div class="note-box" title="Excercise #5">
+            <div class="note-title note-element">
+                Excercise #5 [halliday 2.67]
+            </div>  
+            <div class="note-element note-answer-box question large-400" >
+
+            </div>
+        </div>
+        <div class="note-box" title="Excercise #6">
+            <div class="note-title note-element">
+                Excercise #6 [halliday 2.99]
+            </div>  
+            <div class="note-element note-answer-box question large-400" >
+
+            </div>
+        </div>
+        <div class="note-box" title="Excercise #7">
+            <div class="note-title note-element">
+                Excercise #7 [halliday 2.113]
+            </div>  
+            <div class="note-element note-answer-box question XL" style="height : 900px;">
+
+            </div>
+        </div>
+    </div>
+    <div class="unit" title="Solutions">
+        <div class="title">Solutions</div>
+        <div class="note-box" title="Sample Problem #1">
+            <div class="note-title note-element">
+                Sample Problem #1
+            </div>
+            <div class="note-element note-answer-box">
+                <span class="math">
+                    v(t) = v_0 + at,v(2)= v_0 + 8\cdot 2 = 13 \Rightarrow v_0 = 13 - 16 = -3 \ \rm{(m/s)}
+                </span>
+                <br>
+                <br>
+                <div class="note-element">
+                    It means the car is moving backward at <span class="math"> t = 0</span>.
+                </div>
+            </div>
+        </div>
+        <div class="note-box" title="Sample Problem #2">
+            <div class="note-title note-element">
+                Sample Problem #2
+            </div>
+            <div class="note-element note-answer-box">
+                <div class="note-element">
+                    (a) At <span class="math"> t = 3</span>, the person with car is leading, because at the first 3 seconds, the car has a greater velocity than the train.
+                </div>
+                <div class="note-element">
+                    (b) In this case, we write down the path of the train and the path of the car.(we use <span class="math">x_c</span> and <span class="math">x_t</span> to denote the x-coordinate of the car and the train respectively, and <span class="math">v_c</span> and <span class="math">v_t</span> to denote the velocity of the car and the train respectively.)
+                    <br>
+                    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <span class="math">
+                        v_c =  \begin{cases}
+                        6t  & t\leq 5\\
+                        30 & t \geq 5
+                        \end{cases}  \Rightarrow 
+                        x_c = \begin{cases}
+                        3t^2  & t\leq 5\\
+                        75 + 30(t-5)  & t \geq 5
+                        \end{cases} 
+                    </span>
+                    <br>
+                    <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <span class="math">
+                        v_t = \begin{cases}
+                        5t  & t\leq 8\\
+                        40 & t \geq 8
+                        \end{cases} \Rightarrow
+                        x_t =  \begin{cases}
+                        2.5t^2  & t\leq 8\\
+                        160 + 40(t-8)  & t \geq 8
+                        \end{cases} 
+                    </span>
+                </div>
+                <div class="note-element">
+                    <br>
+                    If we solve the equation <span class="math"> x_c = x_t</span>, we can get <span class="math"> t =  0 \rm{\ or\ } 8.5 </span>,(see the figure below, the figures show the velocity-time and position-time of the car and the train), so the person with train will catch up to the person with car at <span class="math"> t = 8.5 \ \rm{s}</span>.
+                </div>
+                <div class="note-element">
+                    <div class="note-subbox">
+                        <img src="AP-04-01.png"  class="note-img" width="45%">
+                        <img src="AP-04-02.png"  class="note-img"  width="45%">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="note-box" title="Sample Problem #3">
+            <div class="note-title note-element">
+                Sample Problem #3
+            </div>
+            <div class="note-element note-answer-box">
+                <div class="note-element">
+                    (a) 
+                    Using the equations of motion:
+                    <br>
+                    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <span class = math>
+                         \begin{cases}
+                        v(t) = v_0 - g t\\y(t) = v_0 t - \frac{1}{2} g t^2
+                        \end{cases}\Rightarrow \begin{cases}
+                        v(2) = 9.8\\y(2) = 39.2
+                        \end{cases}
+                    </span>
+                    <br>
+                </div>
+                <div class="note-element">
+                    <br>
+                    (b) 
+                    The maximum height is reached when the velocity becomes zero:
+                    <br>
+                    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <span class="math">
+                        v(t_{\text{max}})= v_0-gt_{\text{max}} = 0\Rightarrow t_{\text{max}}= \frac{v_0}{g} = \frac{29.4}{9.8} = 3 \ \text{s} 
+                    </span>
+                    <br>
+                    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <span class="math"> y_{\text{max}} = v_0 t_{\text{max}} - \frac{1}{2} g {t_{\text{max}}}^2 = 29.4 \times 3 - \frac{1}{2} \times 9.8 \times 3^2 = 44.1 \ \text{m} </span>
+                </div>
+                <div class="note-element">
+                    <br>
+                    (c) 
+                    The ball hits the ground when <span class="math"> y(t) = 0 </span>. Using the equation:
+                    <br>
+                    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <span class="math">y(t) = v_0 t - \frac{1}{2} g t^2 = 29.4 t - \frac{1}{2} \times 9.8 t^2 = 0 \Rightarrow t = 0 \vee 6</span>
+                    <br>
+                    <br>
+                    Therefore, the ball hits the ground at <span class="math"> t = 6 \ \text{s} </span>.
+                </div>
+            </div>
+        </div>
+        <div class="note-box" title="Solution to Exercise #1">
+            <div class="note-title note-element">
+                Exercise #1 [Halliday 2.34]
+            </div>
+            <div class="note-element note-answer-box">
+                <span class="math"> \text{(a)}-13.9 \text{ m/s; (b)} -2 \rm{\ m/s^2}</span>
+                (minus sign means the direction is opposite to the positive direction.)
+            </div>
+        </div>
+        <div class="note-box" title="Solution to Exercise #2">
+            <div class="note-title note-element">
+                Exercise #2 [Halliday 2.36]
+            </div>
+            <div class="note-element note-answer-box">
+                <span class="math">\text{(a) } 56.6  \text{ s; (b) } 31.8 \text{ m/s}</span>
+            </div>
+        </div>
+        <div class="note-box" title="Solution to Exercise #3">
+            <div class="note-title note-element">
+                Exercise #3 [Halliday 2.53]
+            </div>
+            <div class="note-element note-answer-box">
+                <span class="math"> 4 \text{m/s}</span>
+            </div>
+        </div>
+        <div class="note-box" title="Solution to Exercise #4">
+            <div class="note-title note-element">
+                Exercise #4 [Halliday 2.56]
+            </div>
+            <div class="note-element note-answer-box">
+                <span class="math">3.0 \text{ m/s}</span>
+            </div>
+        </div>
+        <div class="note-box" title="Solution to Exercise #5">
+            <div class="note-title note-element">
+                Exercise #5 [Halliday 2.67]
+            </div>
+            <div class="note-element note-answer-box">
+                <span class="math"> 0.56 \text{ m/s}</span>
+            </div>
+        </div>
+        <div class="note-box" title="Solution to Exercise #6">
+            <div class="note-title note-element">
+                Exercise #6 [Halliday 2.99]
+            </div>
+            <div class="note-element note-answer-box">
+                <span class="math"> 22 \text{ m/s}</span>
+            </div>
+        </div>
+        <div class="note-box" title="Solution to Exercise #7">
+            <div class="note-title note-element">
+                Exercise #7 [Halliday 2.113]
+            </div>
+            <div class="note-element note-answer-box">
+                <span class="math"> \text{(a) } 5.44 \text{s; (b) } 53.3 \text{m/s; (c) } 5.80 \text{m}</span>
+            </div>
+        </div>
+    </div>
+</body>
