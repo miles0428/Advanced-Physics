@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AP-05: Two and Three Dimensional Motion" title="AP-05"> 
+    <meta name="author" content="YC Chung" title="YC Chung">    
+    <title>AP-05: Two and Three Dimensional Motion</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.13.11/katex.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.13.11/katex.min.js"></script>
+    <script>
+        // use KaTeX to render all .math elements
+        document.addEventListener("DOMContentLoaded", function() {
+            document.querySelectorAll(".math").forEach(function(e) {
+                katex.render(e.textContent, e, { displayMode: false });
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="unit" title="Two and Three Dimensional Motion">
+        <div class="title">Two and Three Dimensional Motion</div>
+        <div class="note-box" title="Displacement">
+            <div class="note-title note-element"> Position and Displacement in Two or Three-Dimensional Space </div>
+            <div class="note-element">
+                In one-dimensional motion, we use <span class="math em1">x</span> to denote the position of an object, and <span class="math em2">\Delta x</span> to denote the displacement. Both are scalars, as we can simply use positive or negative numbers to represent them.
+            </div>
+            <div class="note-element">
+                However, in two or three-dimensional motion, we need to describe the position in a more complex space. Therefore, we use <span class="math">x</span> and <span class="math">y</span> to denote the position of an object in two or three-dimensional space, and <span class="math">\Delta x</span> and <span class="math">\Delta y</span> to denote the displacement. If we combine these terms, we can form a vector <span class="math em1">\overrightharpoon{r} = \left( x,y,... \right)</span> (sometimes written as <span class="math">\overrightharpoon{x}, \bold{r}, \bold{x}</span>) to represent the position, and <span class="math em2">\Delta \overrightharpoon{r} = \left( \Delta x, \Delta y,... \right)</span> to represent the displacement in two or three-dimensional space.
+            </div>
+            <div class="note-element note-subtitle">
+                Unit Vector Notation
+            </div>
+            <div class="note-element">
+                In physics, we use unit vector notation to represent the position and displacement of an object in two or three-dimensional space. For example, we use <span class="math em3">\hat{i}, \hat{j}, and \hat{k}</span> to represent the unit vectors in the <span class="math em3">x, y, and z</span> directions, respectively. Therefore, we can represent the position of an object in multi-dimensional space as <span class="math em1">\overrightharpoon{r} = x\hat{i} + y\hat{j} + ...</span>, and the displacement as <span class="math em2">\Delta \overrightharpoon{r} = \Delta x\hat{i} + \Delta y\hat{j} + ...</span>.
+            </div>
+        </div> 
+        <div class="note-box" title="Sample Problem #1">
+            <div class="note-title note-element">
+                Sample Problem #1
+            </div>
+            <div class="note-element">
+                Assume a car's position in a two-dimensional space is described as <span class="math"> \overrightharpoon{r} = \cos{(\frac{2\pi t}{T})} \hat{i} + \sin{(\frac{2\pi t}{T})} \hat{j} </span>, where <span class="math">T</span> is a constant. (a) What is the car's displacement between <span class="math">\frac{T}{4}</span> and <span class="math"> \frac{T}{2}</span>? (b) Does the car pass the origin at any point in time? If yes, when? (c) Does the car perform periodic motion? If yes, what is the period? (Periodic motion implies that the car will follow a path after a fixed time.)
+            </div>
+            <div class="note-element note-answer-box question small-200">
+            </div>
+        </div>        
+        <div class="note-box" title="Velocity">
+            <div class="note-title note-element"> Velocity in Two or Three-Dimensional Space </div>
+            <div class="note-element">
+                Similarly, we also need to describe the velocity of an object in two or three-dimensional space. We can use the formula below to represent the velocity of an object in two or three-dimensional space:
+            </div>
+            <div class="formula note-element counter">
+                <span class="math"> \overrightharpoon{v} = \left( v_x, v_y,... \right) = v_x\hat{i} + v_y\hat{j} + ... </span>.
+            </div>
+            <div class="note-element note-subtitle">
+                Average Velocity
+            </div>
+            <div class="note-element">
+                Recall that the average velocity in one-dimensional space can be written as follows:
+            </div>
+            <div class="formula counter note-element">
+                <span class="math"> v_{avg} = \frac{\Delta x}{\Delta t}</span>
+            </div>
+            <div class="note-element">
+                We can use a similar formula to calculate the average velocity in two or three-dimensional space, as they are based on the same physics.
+            </div>
+            <div class="formula note-element counter">
+                <span class="math"> \overrightharpoon{v_{avg}} = \frac{\Delta \overrightharpoon{r}}{\Delta t}= \frac{\Delta {x}\hat{i}+\Delta {y}\hat{j}+...}{\Delta{t}}=\frac{\Delta {x}}{\Delta t}\hat{i} + \frac{\Delta {y}}{\Delta t}\hat{j} + ...</span>
+            </div>
+            <div class="note-element">
+                Compared with (1), we can easily find that the vector element in the average velocity can be described as <span class="math"> {(v_{avg})}_i = \frac{\Delta r_i}{\Delta t}</span>
+            </div>
+            <div class="note-element note-subtitle">
+                Instantaneous Velocity
+            </div>
+            <div class="note-element">
+                Similar to the instantaneous velocity in one-dimensional space, the instantaneous velocity in multiple-dimensional space can be written as follows:
+            </div>
+            <div class="note-element formula counter">
+                <span class="math"> \overrightharpoon{v} = \lim_{\Delta t \to 0} \frac{\Delta \overrightharpoon{r}}{\Delta t} = \lim _{\Delta t \to 0} \frac{\Delta {x}}{\Delta t}\hat{i} + \lim _{\Delta t \to 0} \frac{\Delta {y}}{\Delta t}\hat{j} + ... = \frac {d{x}}{dt}\hat{i} + \frac {d{y}}{dt}\hat{j} + ...</span>
+            </div>
+            <div class="note-element">
+                Compared with the instantaneous velocity in one-dimensional space 
+                <span class="math"> 
+                    {v} = \frac{dx}{dt}
+                </span>
+                , we can also write the instantaneous velocity in two or three-dimensional space as follows:
+            </div>
+            <div class="note-element formula counter">
+                <span class="math"> \overrightharpoon{v} = \frac{d\overrightharpoon{r}}{dt} = \frac{d{x}}{dt}\hat{i} + \frac{d{y}}{dt}\hat{j} + ...</span>
+            </div>
+            <div class="note-element">
+            Compared with (1), we can easily find that the vector element in the instantaneous velocity is the derivative of the vector element in the position, that is <span class="math"> {v}_i = \frac{d{r}_i}{dt}</span>  
+            </div>
+        </div>
+        <div class="note-box" title="Sample Problem #2">
+            <div class="note-subbox note-element">
+                <div>
+                    <div class="note-title note-element">Sample Problem #2</div>
+                    <div class="note-element">
+                        Assume that a car's position in a two-dimensional space is described as <span class="math">\overrightharpoon{r} = 3t^2\hat{i} + 2t\hat{j}</span>. Answer the following questions:
+                        (a) What is the average velocity between 0 and 5 seconds? What is the magnitude of the average velocity?
+                        (b) What is the function of velocity over time?
+                    </div>
+                </div>
+                <div class="note-answer-box small question note-element" style="width:210%;height: 170px; margin-bottom: 0;margin-top: 0;"></div>
+            </div>
+        </div>
+        <div class="note-box" title="Sample Problem #3">
+            <div class="note-title note-element">Sample Problem #3</div>
+            <div class="note-element">
+                Assume that a ball follows a path <span class="math"> y(x) = x^3  + x^2 -3x -2</span>. And <span class="math">x</span> is a function of time, <span class="math">x(t) = 4t^3 + (t-2)^2 -5 </span>. Answer the following questions:
+                (a) Will the ball pass the origin at any point in time? If yes, when?
+                (b) Find the average velocity between 0 and 1 seconds.
+                (c) Find the function of the ball's velocity over time.
+                (d) Will the ball stop at any time? If yes, when?
+            </div>
+            <div class="note-element note-answer-box medium question"></div>
+        </div>        
+        <div class="note-box" title = "Acceleration in Two or Three-Dimensional Space">
+            <div class="note-title">Acceleration in Two or Three-Dimensional Space</div>
+            <div class="note-element">
+                Similarly, we can describe the acceleration in a two or three-dimensional space. We can use the formula below to represent the acceleration of an object in a two or three-dimensional space:
+            </div>
+            <div class="note-element note-subtitle">
+                Average Acceleration
+            </div>
+            <div class="note-element formula counter">
+                <span class="math"> \overrightharpoon{a}_{avg} = \frac{\Delta \overrightharpoon{v}}{\Delta t} = \frac{\Delta {v_x}}{\Delta t}\hat{i} + \frac{\Delta {v_y}}{\Delta t}\hat{j} + ...</span>
+            </div>
+            <div class="note-element note-subtitle">
+                Instantaneous Acceleration
+            </div>
+            <div class="note-element formula counter">
+                <span class="math"> \overrightharpoon{a} = \frac{d\overrightharpoon{v}}{dt} = \frac{d{v_x}}{dt}\hat{i} + \frac{d{v_y}}{dt}\hat{j} + ...</span>
+            </div>
+        </div>
+        <div class="note-box" title="Sample Problem #4">
+            <div class="note-subbox note-element">
+                <div>
+                    <div class="note-title note-element">Sample Problem #4</div>
+                    <div class="note-element">
+                        If the velocity of an object in a two-dimensional space is described as <span class="math"> \overrightharpoon{v} = \cos(t)\hat{i} + 2t\sin(t)\hat{j}</span> . (a) What is the average acceleration between <span class="math"> 0 </span> and <span class="math"> \frac{\pi}{3}</span> seconds? (b) Find the function of acceleration over time.
+                    </div>
+                </div>
+                <div class="note-answer-box small question note-element" style="width:210%;height: 185px; margin-bottom: 0;margin-top: 0;"></div>
+            </div>
+        </div>
+        <div class="note-box" title="Sample Problem #5">
+            <div class="note-title note-element">Sample Problem #5</div>
+            <div class="note-element">
+                (a) Follow the step in formula (2) to (5), derive the formula (6) and (7). <br>
+                (b) Find the derivative relation between insantaneous acceleration and position in three-dimension space.
+            </div>
+            <div class="note-element note-answer-box small-200 question" style="height: 220px;"></div>
+        </div>
+        <div class="note-box" title = "Integrate relation of position, velocity and acceleration">
+            <div class="note-title note-element">Integrate Relation of Position, Velocity and Acceleration</div>
+            <div class="note-element">
+                Similar to one-dimensional motion, we can integrate the derivative relation to get the relation between the position, velocity and acceleration.
+            </div>
+            <div class="note-element note-subtitle">
+                Integrate Relation between Position and Velocity
+            </div>
+            <div class="note-element">
+                In (1)(5), we can easily find that each vector element in the instantaneous velocity is the derivative of the vector element in the position, so we can integrate them respectively to get the relation between the position and velocity.
+            </div>
+            <div class="note-element formula counter note-element">
+                <span class="math">
+                    \text{(1) (5)} \Rightarrow v_i = \frac{d{r}_i}{dt} \Rightarrow r_i(t)=\int dr_i = \int v_i dt 
+                    <!-- \Rightarrow r_i(t) =C_i+ v_it  -->
+                </span>
+            </div>
+            <div class="note-element">
+                If the velocity <span class= math> v_i</span> is constant ,and the position at time <span class="math"> t = 0</span> is <span class="math"> r_i(0) = r_{i0}</span>, then we can integrate the relation between the position and velocity.
+            </div>
+            <div class="note-element formula counter note-element">
+                <span class="math">
+                   \text{(8)} \Rightarrow r_i(t) =C_i+ v_it \Rightarrow r_i(t) = r_{i0}+v_it 
+                </span>
+            </div>
+            <div class="note-element note-subtitle">
+                Other Relations between Position, Velocity and Acceleration
+            </div>
+            <div class="note-element">
+                Similarly, we can also find the relations below:
+            </div>
+            <div class="note-element formula counter note-element">
+                <span class="math">
+                   v_i(t) =  \int dv_i =   \int a_i dt 
+                </span>
+            </div>
+            <div class="note-element formula counter note-element">
+                <span class="math">
+                    v_i(t) = v_{i0} + a_it 
+                </span>
+                &nbsp;&nbsp;&nbsp;(Under the condition that the acceleration is constant)
+            </div>
+            <div class="note-element formula counter note-element">
+                <span class="math">
+                    r_i(t) =r_{i0} + v_{i0}t +\frac{1}{2} a_it^2 
+                </span>
+                &nbsp;&nbsp;&nbsp;(Under the condition that the acceleration is constant)
+            </div>
+        </div>
+        <div class="note-box" title="Sample Problem #6">
+            <div class="note-title note-element">Sample Problem #6</div>
+            <div class="note-element">
+                (a) Derive the formula (10) to (12). (b) If the acceleration is not constant, given by <span class="math"> a(t) = 4t + 3</span> , find the relation between position and velocity.
+            </div>
+            <div class="note-element note-answer-box medium question">
+            </div>
+        </div>
+        <div class="note-box" title="Sample Problem #7">
+            <div class="note-title note-element">Sample Problem #7</div>
+            <div class="note-element">
+                There is a game with two balls, the first ball is moving on with the velocity <span class="math"> v_1 = 2 \hat{j} \text{ m/s}</span>.The player need to launch the second ball with 45 degrees and the acceleration <span class="math"> a_2 = 2\sqrt{2}\rm{\ m/s^2} </span> from the origin from the rest. If the second ball hit the first ball, get the formula goal.
+                If the first ball is launched from the position <span class="math"> r_{x0} = 9\hat{i} \text{ m}</span>, how many time the player need to wait for launching the second ball making the second ball hit the first ball? How many seconds to hit the first ball after the first ball launched?
+            </div>
+            <div class="note-element note-answer-box large question" style="height: 340px;">
+                <!-- <br>  -->
+                <img src="AP-05-01.png" class="note-img"  style="height: 200px; position: absolute; right:20% ;transform: translateX(40%);">
+            </div>
+        </div>
+    </div>
+    <div class="unit" title = "Exercises">
+        <div class="title">Exercises</div>
+        <div class="note-box" title="Exercise #1">
+            <div class="note-title note-element">
+                Exercise #1 [halliday 4.3]
+            </div>
+            <div class="note-element note-answer-box question small">
+            </div>
+        </div>
+        <div class="note-box" title="Exercise #2">
+            <div class="note-title note-element">
+                Exercise #2 [halliday 4.9]
+            </div>
+            <div class="note-element note-answer-box question small">
+            </div>
+        </div>
+
+        <div class="note-box" title="Exercise #3">
+            <div class="note-title note-element">
+                Exercise #3 [halliday 4.17]
+            </div>
+            <div class="note-element note-answer-box question medium-300">
+            </div>
+        </div>
+        <div class="note-box" title="Exercise #4">
+            <div class="note-title
+            note-element">
+                Exercise #4 [halliday 4.19]
+            </div>
+            <div class="note-element note-answer-box question large-400">
+            </div>
+        </div>
+        <div class="note-box" title="Exercise #4">
+            <div class="note-title
+            note-element">
+                Exercise #4 [halliday 4.20]
+            </div>
+            <div class="note-element note-answer-box question large-400">
+            </div>
+        </div>
+    </div>
+    <div class="unit" title = "Solutions">
+        <div class="title">Solutions</div>
+        <div class="note-box" title="Sample Problem #1">
+            <div class="note-title note-element">
+                Sample Problem #1
+            </div>
+            <div class="note-element note-answer-box">
+                <div class="note-element note-subtitle">
+                    (a) What is the car's displacement between 
+                    <!-- $$\frac{T}{4}$$  -->
+                     <span class="math">
+                         \frac{T}{4}
+                     </span>
+                    and 
+                    <!-- $$\frac{T}{2}$$? -->
+                     <span class="math">\frac{T}{2}</span>
+                </div>
+                <div class="note-element">
+                    The displacement is the change in position over the change in time. We can find the position at <span class="math"> t = \frac{T}{4}</span> and <span class="math"> t = \frac{T}{2}</span>, subtract them, and then divide by the change in time.
+                </div>
+                <div class="note-element formula counter note-element">
+                    <span class="math">
+                        \Delta \overrightharpoon{r} = \overrightharpoon{r}(\frac{T}{2}) - \overrightharpoon{r}(\frac{T}{4}) = (-1, -1)
+                    </span>
+                </div>
+                <div class="note-element note-subtitle">
+                    (b) Does the car pass the origin at any point in time? If yes, when?
+                </div>
+                <div class="note-element">
+                    when
+                    <span class = "math ">
+                        \cos{(\frac{2\pi t}{T})} = 0
+                        \Rightarrow
+                        \sin{(\frac{2\pi t}{T})} = \pm 1
+                    </span>
+                </div>
+                <div class="note-element">
+                    The car will never pass the origin.
+                </div>
+                <div class="note-element note-subtitle">
+                    (c) Does the car perform periodic motion? If yes, what is the period?
+                </div>
+                <div class="note-element">
+                    If the car have a periodic motion, the car will following the formula below,where <span class="math">T_p</span> is the period.
+                </div>
+                <div class="note-element formula counter note-element">
+                    <span class="math">
+                        \overrightharpoon{r(t)} = \overrightharpoon{r(t+T_p)}
+                    </span>
+                </div>
+                <div class="note-element">
+                    In this case, We can rewrite the equation as follows.
+                </div>
+                <div class="note-element formula counter note-element">
+                    <span class="math">
+                        \begin{matrix}
+                        \overrightharpoon{r(t+T_p)} 
+                         & = &\cos{(\frac{2\pi (t+T_p)}{T})} \hat{i} + \sin{(\frac{2\pi (t+T_p)}{T})} \hat{j} \\
+                         & = &\cos{(\frac{2\pi t}{T}+\frac{2\pi T_p}{T})} \hat{i} + \sin{(\frac{2\pi t}{T}+\frac{2\pi T_p}{T})} \hat{j}
+                        \end{matrix}   
+                    </span>
+                </div>
+                <div class="note-element">
+                    If we take <span class="math">T_p</span> equal to <span class="math">T</span>, then we get
+                </div>
+                <div class="note-element formula counter note-element">
+                    <span class="math">
+                        \begin{matrix}
+                        \overrightharpoon{r(t+T)}&=&\cos{(\frac{2\pi t}{T}+2\pi)} \hat{i} + \sin{(\frac{2\pi t}{T}+2\pi)} \hat{j}&\\ &= &\cos{(\frac{2\pi t}{T})} \hat{i} + \sin{(\frac{2\pi t}{T})} \hat{j} = \overrightharpoon{r(t)}\ \  \ \ \ \ \ 
+                        \end{matrix}   
+
+
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="note-box" title="Sample Problem #2">
+            <div class="note-title note-element">
+                Sample Problem #2
+            </div>
+            <div class="note-element note-answer-box">
+                <div class="note-element note-subtitle">
+                    (a) What is the average velocity between 0 and 5 seconds? What is the magnitude of the average velocity?
+                </div>
+                <div class="note-element">
+                    The average velocity is the change in position divided by the change in time. We can find the position at <span class="math"> t= 0</span> and <span class="math"> t= 5</span>, subtract them, and then divide by the change in time.
+                </div>
+                <div class="note-element formula counter note-element">
+                    <span class="math">
+                        v_{avg} = \frac{\Delta r}{\Delta t} = \frac{r(5) - r(0)}{5 - 0} = \begin{pmatrix}
+                        15  \\
+                        2
+                     \end{pmatrix}
+                    </span>
+                </div>
+                <div class="note-element">
+                    The magnitude of the average velocity is the square root of the sum of the squares of the components of the average velocity.
+                </div>
+                <div class="note-element formula counter note-element">
+                    <span class="math">
+                        ||v_{avg}|| = \sqrt{(v_{avg})^2} = \sqrt{15^2 + 2^2} = 15.13
+                    </span>
+                </div>
+
+                <div class="note-element note-subtitle">
+                    (b) What is the function of velocity over time?
+                </div>
+                <div class="note-element">
+                    The velocity is the derivative of the position. We can find the derivative of each component of the position to get the velocity.
+                </div>
+                <div class="note-element formula counter note-element">
+                    <span class="math">
+                        v = \frac{dr}{dt} = \begin{pmatrix}
+                        6t \\
+                        2
+                     \end{pmatrix}
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="note-box" title="Sample Problem #3">
+            <div class="note-title note-element">
+                Sample Problem #3
+            </div>
+            <div class="note-element note-answer-box">
+                <div class="note-element note-subtitle">
+                    (a) Will the ball pass the origin at any point in time? If yes, when?
+                </div>
+                <div class="note-element">
+                    If we put <span class="math">
+                        x = 0 </span>  into <span class="math">y(x) \Rightarrow y(0) = -2</span> 
+                    </span>
+                    . Therefore, the ball will not pass the origin at any point in time.
+                </div>
+
+                <div class="note-element note-subtitle">
+                    (b) Find the average velocity between 0 and 1 seconds.
+                </div>
+                <div class="note-element">
+                    The average velocity is the change in position divided by the change in time. We can find the position at <span class="math"> t= 0</span> and <span class="math"> t= 1</span>, subtract them, and then divide by the change in time.
+                </div>
+                <div class="note-element formula counter note-element">
+                    <span class="math">
+                        r(0) = \begin{pmatrix}
+                            x(0)\\y(x(0))
+                        \end{pmatrix}
+                        = \begin{pmatrix}
+                            -1\\1
+                        \end{pmatrix},
+                        r(1) = \begin{pmatrix}
+                            x(1)\\y(x(1))
+                        \end{pmatrix}
+                        = \begin{pmatrix}
+                            0\\-2
+                        \end{pmatrix}
+                        \Rightarrow
+                        \\ \Delta r = \begin{pmatrix}
+                            1\\-3
+                        \end{pmatrix}
+                        \Rightarrow v_{avg}=\frac{\Delta r}{\Delta t} = \begin{pmatrix}
+                            1\\-3
+                        \end{pmatrix}
+                    </span>
+                </div>
+                <div class="note-element note-subtitle">
+                    (c) Find the function of the ball's velocity over time.
+                </div>
+                <div class="note-element">
+                    The velocity is the derivative of the position. We can find the derivative of each component of the position to get the velocity.
+                </div>
+                <div class="note-element formula counter note-element">
+                    <span class="math">
+                        v_x = \frac{dx}{dt} = 12t^2 + 2(t-2) = 12t^2 + 2t - 4
+                    </span>
+                </div>
+                <div class="note-element formula counter note-element">
+                    <span class="math">
+                        v_y = \frac{dy}{dt} = \frac{dx}{dt} \frac{dy}{dx}  = (3x^2 + 2x -3)(12t^2 + 2t - 4)
+                    </span>
+                </div>
+
+                <div class="note-element note-subtitle">
+                    (d) Will the ball stop at any time? If yes, when?
+                </div>
+                <div class="note-element">
+                    Stop means that the velocity is 0. When we see the <span class="math">v_x</span> we can find that it is 0 when <span class = math> t= \frac{1}{2} \vee t = -\frac{2}{3}</span>. If we check the <span class="math">v_y</span> we can find that it is 0 when <span class="math"> v_x = 0</span>.
+                    So the ball will stop at <span class="math"> t= \frac{1}{2} \vee t = -\frac{2}{3}</span>.
+                </div>
+            </div>
+        </div>     
+        <div class="note-box" title="Sample Problem #4">
+            <div class="note-title note-element">
+                Sample Problem #4
+            </div>
+            <div class="note-element note-answer-box">
+                <div class="note-element note-subtitle">
+                    (a) What is the average acceleration between <span class="math"> 0 </span> and <span class="math"> \frac{\pi}{3}</span> seconds?
+                </div>
+                <div class="note-element">
+                    The average acceleration is the change in velocity divided by the change in time. We can find the velocity at <span class="math"> t= 0</span> and <span class="math"> t= \frac{\pi}{3}</span>, subtract them, and then divide by the change in time.
+                </div>
+                <div class="note-element formula counter note-element">
+                    <span class="math">
+                        a_{avg} = \frac{\Delta v}{\Delta t} = \frac{v(\frac{\pi}{3}) - v(0)}{\frac{\pi}{3} - 0} = -\frac{3}{2\pi}\hat{i} + \frac{\sqrt{3}}{2}\hat{j}
+                    </span>
+                </div>
+                <div class="note-element note-subtitle">
+                    (b) What is the function of acceleration over time?
+                </div>
+                <div class="note-element">
+                    The acceleration is the derivative of the velocity. We can find the derivative of each component of the velocity to get the acceleration.
+                </div>
+                <div class="note-element formula counter note-element">
+                    <span class="math">
+                        a = \frac{dv}{dt} = -\sin(t)\hat{i} + \left(2t\cos(t) + 2\sin(t)\right)\hat{j}
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="note-box" title ="Sample Problem #5">
+            <div class="note-title note-element">
+                Sample Problem #5
+            </div>
+            <div class="note-element note-answer-box">
+                <div class="note-element note-subtitle">
+                    (a) Follow the step in formula (2) to (5), derive the formula (6) and (7).
+                </div>
+                <div class="note-element">
+                    The average acceleration in one-dimensional space can be written as follows:
+                </div>
+                <div class="formula counter note-element">
+                    <span class="math"> a_{avg} = \frac{\Delta v}{\Delta t}</span>
+                </div>
+                <div class="note-element">
+                    In two or three-dimensional space, the formula for average acceleration becomes:
+                </div>
+                <div class="formula note-element counter">
+                    <span class="math"> \overrightharpoon{a_{avg}} = \frac{\Delta \overrightharpoon{v}}{\Delta t}= \frac{\Delta {v_x}\hat{i}+\Delta {v_y}\hat{j}+...}{\Delta{t}}=\frac{\Delta {v_x}}{\Delta t}\hat{i} + \frac{\Delta {v_y}}{\Delta t}\hat{j} + ...</span>
+                </div>
+                <div class="note-element">
+                    Similar to velocity, we can find that the vector element in the average acceleration can be described as:
+                </div>
+                <div class="formula note-element counter">
+                    <span class="math"> {(a_{avg})}_i = \frac{\Delta v_i}{\Delta t}</span>
+                </div>
+                <div class="note-element">
+                    The instantaneous acceleration in one-dimensional space can be written as follows:
+                </div>
+                <div class="note-element formula counter">
+                    <span class="math"> a = \frac{dv}{dt}</span>
+                </div>
+                <div class="note-element">
+                    In two or three-dimensional space, the formula for instantaneous acceleration becomes:
+                </div>
+                <div class="note-element formula counter">
+                    <span class="math"> \overrightharpoon{a} = \frac{d\overrightharpoon{v}}{dt} = \frac{d{v_x}}{dt}\hat{i} + \frac{d{v_y}}{dt}\hat{j} + ...</span>
+                </div>
+                <div class="note-element">
+                    Compared with the instantaneous acceleration in one-dimensional space, we can also write the instantaneous acceleration in two or three-dimensional space as follows:
+                </div>
+                <div class="note-element formula counter">
+                    <span class="math"> \overrightharpoon{a} = \frac{d\overrightharpoon{v}}{dt} = \frac{d{v_x}}{dt}\hat{i} + \frac{d{v_y}}{dt}\hat{j} + ...</span>
+                </div>
+                <div class="note-element">
+                    Finally , we can easily find that the vector element in the instantaneous acceleration is the derivative of the vector element in the velocity, that is:
+                </div>
+                <div class="note-element formula counter">
+                    <span class="math"> {a}_i = \frac{d{v}_i}{dt}</span>
+                </div>
+                <div class="note-element note-subtitle">
+                    (b) Find the derivative relation between insantaneous acceleration and position in three-dimension space.
+                </div>
+                <div class="note-element">
+                    First, let's recall the definitions:
+                </div>
+                <div class="note-element formula counter">
+                    <span class="math"> \overrightharpoon{v} = \frac{d\overrightharpoon{r}}{dt} = \frac{d{x}}{dt}\hat{i} + \frac{d{y}}{dt}\hat{j} + \frac{d{z}}{dt}\hat{k} </span>
+                </div>
+                <div class="note-element formula counter">
+                    <span class="math"> \overrightharpoon{a} = \frac{d\overrightharpoon{v}}{dt} = \frac{d^2{x}}{dt^2}\hat{i} + \frac{d^2{y}}{dt^2}\hat{j} + \frac{d^2{z}}{dt^2}\hat{k} </span>
+                </div>
+                <div class="note-element">
+                    From these definitions, we can see that acceleration is the second derivative of position with respect to time. Therefore, the derivative relationship between instantaneous acceleration and position in three-dimensional space is:
+                </div>
+                <div class="note-element formula counter">
+                    <span class="math"> \overrightharpoon{a} = \frac{d^2\overrightharpoon{r}}{dt^2} = \frac{d^2{x}}{dt^2}\hat{i} + \frac{d^2{y}}{dt^2}\hat{j} + \frac{d^2{z}}{dt^2}\hat{k} </span>
+                </div>
+            </div>
+            
+        </div>
+        <div class="note-box" title="Sample Problem #6">
+            <div class="note-title note-element">
+                Sample Problem #6
+            </div>
+            <div class="note-element note-answer-box">
+                <div class="note-element note-subtitle">
+                    (a) Derive the formula (10) to (12).
+                </div>
+                <div class="note-element">
+                    We can easily find that each vector element in the instantaneous acceleration is the derivative of the vector element in the velocity, so we can integrate them respectively to get the relation between the velocity and acceleration.
+                </div>
+                <div class="note-element formula counter note-element">
+                    <span class="math">
+                         a_i = \frac{d{v}_i}{dt} \Rightarrow v_i(t)=\int dv_i = \int a_i dt 
+                        <!-- \Rightarrow r_i(t) =C_i+ v_it  -->
+                    </span>
+                </div>
+                <div class="note-element">
+                     If the acceleration is constant, the velocity at time <span class="math"> t = 0</span> is <span class="math"> v_i(0) = v_{i0}</span>, then we can integrate the relation between the position and velocity.
+                </div>
+                <div class="note-element formula counter note-element">
+                    <span class="math">
+                        v_i(t) =C_i+ a_it \Rightarrow v_i(t) = v_{i0}+a_it 
+                    </span>
+                </div>
+                <div class="note-element">
+                    The relation between the position and constant acceleration can be obtained by integrating derivative relation between the position and velocity.
+                </div>
+                <div class="note-element formula counter note-element">
+                    <span class="math">
+                        r_i(t) = \int v_idt = \int (v_{i0}+a_it)dt = r_{i0} + v_{i0}t +\frac{1}{2} a_it^2
+                    </span>
+                </div>
+
+                <div class="note-element note-subtitle">
+                    (b) If the acceleration is not constant, given by <span class="math"> a(t) = 4t + 3</span> , find the relation between position and velocity.
+                </div>
+                <div class="note-element">
+                    We can easily find that each vector element in the instantaneous acceleration is the derivative of the vector
+                    element in the velocity, so we can integrate them respectively to get the relation between the velocity and
+                    acceleration. </div>
+                <div class="note-element formula counter note-element">
+                    <span class="math"> a(t) = \frac{dv(t)}{dt} \Rightarrow v(t)=\int dv = \int a(t) dt = \int (4t + 3) dt = 2t^2 +
+                        3t + C_1 </span>
+                </div>
+                <div class="note-element"> If the acceleration is not constant, the velocity at time <span class="math"> t =
+                        0</span> is <span class="math"> v(0) = v_{0}</span>, then we can integrate the relation between the position
+                    and velocity. </div>
+                <div class="note-element formula counter note-element"> <span class="math"> v(t) =C_1+ \int a(t) dt \Rightarrow v(t)
+                        = v_{0}+2t^2 + 3t </span> </div>
+                <div class="note-element"> The relation between the position and non-constant acceleration can be obtained by
+                    integrating derivative relation between the position and velocity. </div>
+                <div class="note-element formula counter note-element"> <span class="math"> x(t) = \int v(t) dt = \int (v_{0}+2t^2 +
+                        3t) dt = x_{0} + v_{0}t + \frac{2}{3}t^3 + \frac{3}{2}t^2 </span>
+                </div>
+            </div>
+            
+        </div>                
+        <div class="note-box" title="Sample Problem #7">
+            <div class="note-title note-element">
+                Sample Problem #7
+            </div>
+            <div class="note-element note-answer-box">
+                <div class="note-element">
+                    let <span class="math">t</span> is the time after the first ball launched, and <span class="math">t_{\text{wait}}</span>is the time the player need to wait for launching the second ball.
+                </div>
+                <span class=" note-element note-subtitle">
+                    First Ball:
+                </span>
+                <div class="note-element">
+                    The first ball is moving vertically upwards with a velocity of 2 m/s from the position 9 m along the x-axis. So, its position at any time t can be described as <span class="math">r_1(t) = 9\hat{i} + 2t\hat{j}</span>.
+                </div>
+                <span class=" note-element note-subtitle">
+                    Second Ball:
+                </span>
+                <div class="note-element">
+                    The second ball is launched from rest at a 45-degree angle with an acceleration of <span class="math">2\sqrt{2}\rm{\ m/s^2}</span>.We can easily get the <span class="math"> {a_2} = 2 \hat{i} + 2 \hat{j} \rm{\ m/s^2}</span>. The position of the second ball at any time t (where t  <span class =math >\geq t_{\text{wait}}</span>) is given by:
+                </div>
+                <div class="note-element">
+                    Along x-axis: <span class="math">x_2(t) = \frac{1}{2}\cdot 2(t - t_{\text{wait}})^2 = (t - t_{\text{wait}})^2</span>
+                </div>
+                <div class="note-element">
+                    Along y-axis: <span class="math">y_2(t) = \frac{1}{2}\cdot 2(t - t_{\text{wait}})^2 = (t - t_{\text{wait}})^2</span>
+                </div>
+                <span class=" note-element note-subtitle">
+                    Collision Condition: 
+                </span>
+                <div class="math note-element">
+                     9 = (t - t_{\text{wait}})^2, 2t = (t - t_{\text{wait}})^2
+                </div>
+                <div class="note-element">
+                    Therefore, the time to hit the first ball is <span class="math">t = 4.5 \text{s, } t_{\text{wait}} = 1.5\text{s}</span>
+                </div>
+            </div>
+        </div>
+        <div class="note-box" title="Exercise #1">
+            <div class="note-title note-element">
+                Exercise #1 [halliday 4.3]
+            </div>
+            <div class="note-element note-answer-box">
+                <span class="math"> (-2.0)\hat{i}+(6.0)\hat{j}-(10)\hat{k} \text{\ \ \ \ \ \ \ \  (unit: meter)}</span>
+            </div>
+        </div>
+        <div class="note-box" title="Exercise #2">
+            <div class="note-title note-element">
+                Exercise #2 [halliday 4.9]
+            </div>
+            <div class="note-element note-answer-box">
+                (a) 0.83 cm/s; (b) 0°; (c) 0.11 m/s;
+            </div>
+        </div>
+        <div class="note-box" title="Exercise #3">
+            <div class="note-title note-element">
+                Exercise #3 [halliday 4.17]
+            </div>
+            <div class="note-element note-answer-box">
+                    <span class="math"> 32\ \hat{i} \text{\ \ \ \ \ \ \ \  (unit: m/s)}</span>
+            </div>
+        </div>
+        <div class="note-box" title="Exercise #4">
+            <div class="note-title note-element">
+                Exercise #4 [halliday 4.19]
+            </div>
+            <div class="note-element note-answer-box">
+                <span class="math"> \text{(a)} (72.0 \rm{ \ m})\hat{i} + (90.7 \rm{ \ m})\hat{j}; \text{(b)} 49.5° </span>
+            </div>
+        </div>
+        <div class="note-box" title="Exercise #5">
+            <div class="note-title note-element">
+                Exercise #5 [halliday 4.20]
+            </div>
+            <div class="note-element note-answer-box">
+                <span class="math">  60° </span>
+            </div>
+        </div>
+    </div>
+</body>
