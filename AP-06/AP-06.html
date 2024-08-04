@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AP-06: Projectile Motion" title="AP-05"> 
+    <meta name="author" content="YC Chung" title="YC Chung">    
+    <title>AP-06: Projectile Motion</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.13.11/katex.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.13.11/katex.min.js"></script>
+    <script>
+        // use KaTeX to render all .math elements
+        document.addEventListener("DOMContentLoaded", function() {
+            document.querySelectorAll(".math").forEach(function(e) {
+                katex.render(e.textContent, e, { displayMode: false });
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="unit" title="Projectile Motion">
+        <div class="title">Projectile Motion</div>
+        <div class="note-box" title="Introduction">
+            <div class="note-title note-element"> Introduction to Projectile Motion </div>
+            <div class="note-element">
+                Projectile motion refers to the motion of an object projected into the air and subject only to acceleration as a result of gravity. The object is called a projectile, and its path is called its trajectory.
+            </div>
+        </div>
+        <div class="note-box" title="Equations of Motion">
+            <div class="note-title note-element"> Equations of Motion in Projectile Motion </div>
+            <div class="note-element">
+                Recall that in two-dimensional space, we can treat the horizontal and vertical components of the motion separately.
+            </div>
+            <div class="note-element">
+                In Projectile Motion, generally, we will assume that the object projected with an initial velocity of <span class="math">v_{0}</span> and an angle of <span class="math">\theta</span>. Therefore, the initial horizontal and vertical components of the motion are given by:            
+            </div>
+            <div class="formula note-element counter">
+                <span class="math">v_{x0} = v_{0}\cos(\theta)\\v_{y0} = v_{0}\sin(\theta)</span>
+            </div>
+            <div class="note-element note-subtitle">
+                Horizontal Part of Projectile Motion
+            </div>
+            <div class="note-element">
+                The horizontal part of the projectile motion is not affected by gravity (, sometime might contain air resistance or drag, depending on the situation, which is not considered here), so the acceleration can be neglected. Thus, we can write the equations of motion as:
+            </div>
+            <div class="note-element counter formula">
+                <span class="math">
+                    v_x(t) = v_{x0} = v_{0}\cos(\theta)
+                </span>
+            </div>
+            <div class="formula note-element counter">
+                <span class="math">
+                    x(t) = x_0+v_{x0}t = x_0+v_{0}\cos(\theta)t
+                </span>
+            </div>
+            <div class="note-element note-subtitle">
+                Vertical Part of Projectile Motion
+            </div>
+            <div class="note-element">
+                The vertical part of the projectile motion is affected by gravity, so the acceleration can be taken into account. Thus, we can write the equations of motion as:
+            </div>
+            <div class="note-element counter formula">
+                <span class="math">
+                    v_y(t) = v_{y0} - gt= v_{0}\sin(\theta) - g t
+                </span>
+            </div>
+            <div class="formula note-element counter">
+                <span class ="math"> y(t) = y_0+v_{y0}t - \frac{1}{2}gt^{2} = y_0+v_{0}\sin(\theta)t - \frac{1}{2}gt^{2} </span>
+            </div>
+            <div class="note-element">
+                where <span class="math">g = 9.8 \text{ m/s}^{2}</span> is the acceleration due to gravity.
+            </div>
+            <div class="note-element">
+                We also have the following relations between height and vertical velocity:
+            </div>
+            <div class="formula note-element counter">
+                <span class="math"> v_{y}^{2} = v_{y0}^{2} - 2g(y-y_0) = v_{0}^{2}\sin^{2}(\theta)- 2g(y-y_0)</span>
+            </div>
+        </div>
+        <div class="note-box" title="Path of Projectile">
+            <div class="note-title note-element">Path of Projectile</div>
+            <div class="note-element">
+                With the equations of motion, we can also find the path of the projectile. We can use the the horizontal and vertical components of the position to find the path of the projectile:
+            </div>
+            <div class="note-element">
+                If we consider the initial position of projectile as origin, we can use time to connect the horizontal and vertical components of the motion:
+            </div>
+            <div class="formula note-element counter">
+                <span class="math">
+                    \text{(3)}\Rightarrow t = \frac{x}{v_{0}\cos(\theta)}
+                </span>
+            </div>
+            <div class="note-element">
+                put (7) in (5)
+            </div>
+            <div class="formula note-element counter">
+                <span class="math">
+                    \text{(5)}\Rightarrow y= v_{0}\sin(\theta)( \frac{x}{v_{0}\cos(\theta)})-\frac{1}{2}g{(\frac{x}{v_{0}\cos(\theta)})}^2 = \tan(\theta)x - {(\frac{gx^2}{2{v_{0}}^2\cos^2(\theta)})}
+                </span>
+            </div>
+            <div class="note-element">
+                As the formula shows, the path of the projectile is a parabola.(see <a href="https://en.wikipedia.org/wiki/Parabola" target="_blank"> Introduction to Parabola</a>)
+            </div>
+        </div>
+        <div class="note-box" title="Sample Problem #1">
+            <div class="note-title note-element">Sample Problem #1</div>
+            <div class="note-element">
+                A ball is launched with an initial velocity <span class="math">v_0 </span> with  magnitude <span class="math">10\sqrt{2} \text{ m/s}</span> and an angle of <span class="math">\theta = 45^{\circ}</span>. What is the function of the position over time?
+            </div>
+            <div class="note-element note-answer-box small question" >
+            </div>
+            <div class="note-element">
+                What is the path of the ball (in the form of a parabola)?
+            </div>
+            <div class="note-element note-answer-box medium question" >
+            </div>
+        </div>
+        <div class="note-box" title ="The Horizontal Range">
+            <div class="note-title note-element">The Horizontal Range</div>
+            <div class="note-element">
+                If we consider a situation ,a person is throwing a ball, it not hard to find that both the angle and the initial velocity are important. If throwing a ball harder, we can find the horizontal range of the ball is longer. And if we throw a ball with different angle, it will also affect the horizontal range of the ball.
+            </div>
+            <div class="note-element">
+                In Projectile Motion, we can find the horizontal range by following method.
+            </div>
+            <div class="note-element">
+                At the first, we can find the vertical range of the object can be written as (assume that the object is landing at <span class="math"> R = x_L\hat{i} + 0\hat{j}</span> when <span class="math">t = t_L</span> ):
+            </div>
+            <div class="formula note-element counter">
+                <span class="math">
+                   \text{(3)}\Rightarrow x_L=v_0\cos(\theta)t_L
+                </span>
+            </div>
+            <div class="note-element">
+                Then we can find the range is relate to the time flying in the air, if we use the formula (5) we can exact know when the object is landing (Assume landing at <span class="math">y = 0</span>).
+            </div>
+            <div class="formula note-element counter">
+                <span class="math">
+                    (5) \Rightarrow y_{L} = v_0\sin(\theta)t_L - \frac{1}{2}gt_L^2 = 0 \Rightarrow t_L = \frac{2v_0\sin(\theta)}{g}
+                </span>
+            </div>
+            <div class="note-element">
+                Put the time into the formula (9), we can find the horizontal range of the object:
+            </div>
+            <div class="formula note-element counter">
+                <span class="math">
+                    \text{(9)}\Rightarrow x_L = \Big(v_0\cos(\theta)\Big)\Big( \frac{2v_0\sin(\theta)}{g}\Big) = \frac{v_0^2\sin(2\theta)}{g}
+                </span>
+            </div>
+            <div class="note-element note-subtitle">
+                What makes an object fly farther ?
+            </div>
+            <div class="note-element">
+                By (11), we can find if we what to make the object fly farther, we can increase the initial velocity or change the angle into <span class = 'math em1'> 45^{\circ}</span> can make the object fly farther.
+            </div> 
+        </div>
+        <div class="note-box" title="Sample Problem #2">
+            <div class="note-title note-element">Sample Problem #2</div>
+            <div class="note-element">
+                Assume that the object is thrown with same magnitude in the initial velocity, and the launch and landing heights is the same.
+                (a) Show that the horizontal range at <span class="math">30^{\circ}</span> and <span class="math">60^{\circ}</span> is the same.
+                (b) Show that the horizontal range at <span class="math">45^{\circ}</span> is maximized.
+            </div>
+            <div class="note-element note-answer-box small-200 question" >
+            </div>
+        </div>
+        <div class="note-box" title="Max Height">
+            <div class="note-title note-element">Max Height</div>
+            <div class="note-element">
+                The maximum height is also an important factor in projectile motion. We can find the maximum height by following methods.
+            </div>
+            <div class="note-element note-subtitle">
+                Method 1: Use the equation of motion to find the point maximum height.
+            </div>
+            <div>
+                As we know, the maximum height means the height when the vertical velocity becomes zero.
+                (Or in Math , the maximum height means the first derivative of the height function is zero, we also need to check the second derivative of the height function is negative , which means the acceleration is negative in physics.)
+            </div>
+            <div class="note-element">
+                We can use the equation of motion to find the maximum height. In here, we use <span class = math> t_{\text{max}}</span> and <span class="math"> y_{\text{max}}</span> to present the time and position reaching the max height.
+            </div>
+            <div class="note-element formula counter">
+                <span class="math">
+                    \begin{cases}
+                        v_y = v_{y0} - gt\\
+                        y = v_{y0}t - \frac{1}{2}gt^2
+                    \end{cases}
+                    \Rightarrow t_{\text{max}} = \frac{v_{y0}}{g}
+                    \Rightarrow y_{\text{max}} = \frac{v_{y0}^2}{g} - {\frac{v_{y0}^2}{2g}}={\frac{v_{y0}^2}{2g}}={\frac{v_{0}^2\sin^2(\theta)}{2g}}
+                </span>. 
+            </div>
+            <div class="note-element note-subtitle">
+                Method 2: Use the equation of path to find the maximum height.
+            </div>
+            <div class="note-element">
+                As we know, the path of the projectile is a parabola, so the maximum height is the vertex of the parabola. We can simply derivate the equation of path to find where the maximum height is.
+            </div>
+        </div>
+        <div class="note-box" title="Sample Problem #3">
+            <div class="note-title note-element">Sample Problem #3</div>
+            <div class="note-element">
+                Use Method 2 to find the maximum height of the projectile, and show that result are the same as Method 1.
+            </div>
+            <div class="note-element note-answer-box large question" >
+            </div>
+        </div>
+        <div class="note-box" title="Sample Problem #4">
+            <div class="note-title note-element">Sample Problem #4</div>
+            <div class="note-element">
+                Assume that Andrew is use an air gun to shoot a free falling object. Shows that Andrew can always hit the object if he aims at the object and shoots at the time it start falling. (See picture 4-11 at page 72 in halliday's book)
+            </div>
+            <div class="note-element note-answer-box medium-300 question" >
+            </div>
+        </div>
+        <div class="note-box" title="Sample Problem #5">
+            <div class="note-title note-element">Sample Problem #5</div>
+            <div class="note-element">
+                Assume that an archer located at <span class="math">R = 0 \hat{i} + 2 \hat{j}</span> are shooting an arrow at the target. The target is located at <span class="math">R = 20 \hat{i} + 2 \hat{j}</span>, If the </span> magnitude of the initial velocity is <span class="math">v_0 = 20 </span>. (a) what is the angle the archer need to use to hit the target? (b) when the arrow hit the target?
+            </div>
+            <div class="note-element note-answer-box medium-300 question" ></div>
+        </div>
+    </div>
+    <div class="unit" title="Exercises">
+        <div class="title">Exercises</div>
+        <div class="note-box" title="Exercise #1">
+            <div class="note-title note-element">
+                Exercise #1 [halliday 4.23]
+            </div>
+            <div class="note-element note-answer-box question small">
+            </div>
+        </div>
+        <div class="note-box" title="Exercise #2">
+            <div class="note-title note-element">
+                Exercise #2 [halliday 4.33]
+            </div>
+            <div class="note-element note-answer-box question small">
+            </div>
+        </div>
+        <div class="note-box" title="Exercise #3">
+            <div class="note-title note-element">
+                Exercise #3 [halliday 4.39]
+            </div>
+            <div class="note-element note-answer-box question small">
+            </div>
+        </div>
+        <div class="note-box" title="Exercise #4">
+            <div class="note-title note-element">
+                Exercise #4 [halliday 4.45]
+            </div>
+            <div class="note-element note-answer-box question small">
+            </div>
+        </div>
+        <div class="note-box" title="Exercise #5">
+            <div class="note-title note-element">
+                Exercise #5 [halliday 4.53]
+            </div>
+            <div class="note-element note-answer-box question small">
+            </div>
+        </div>
+        <div class="note-box" title="Exercise #6">
+            <div class="note-title note-element">
+                Exercise #5 [halliday 4.55]
+            </div>
+            <div class="note-element note-answer-box question small">
+            </div>
+        </div>
+    </div>
+    <div class="unit" title="Solutions">
+        <div class="title">Solutions</div>
+        <div class="note-box" title="Sample Problem #1 Solution">
+            <div class="note-title note-element">Sample Problem #1 </div>
+            <div class="note-elment note-answer-box">
+            <div class="note-element note-subtitle">
+                Initial Velocity Components
+            </div>
+            <div class="note-element">
+                The initial velocity of the ball is given as <span class="math">v_0 = 10\sqrt{2} \text{ m/s}</span> and the launch angle is <span class="math">\theta = 45^{\circ}</span>. We can break down the initial velocity into its horizontal and vertical components using the launch angle. The horizontal component <span class="math">v_{0x} = v_0 \cos(\theta)</span> and the vertical component <span class="math">v_{0y} = v_0 \sin(\theta)</span>. Since <span class="math">\theta = 45^{\circ}</span>, we have <span class="math">\cos(45^{\circ}) = \sin(45^{\circ}) = \frac{1}{\sqrt{2}}</span>. Therefore, <span class="math">v_{0x} = v_{0y} = 10 \text{ m/s}</span>.
+            </div>
+        
+            <div class="note-element note-subtitle">
+                 Position Over Time
+            </div>
+            <div class="note-element">
+                The position of the ball at any time <span class="math">t</span> can be described by the following equations:
+                <div class="note-element formula counter note-element">
+                    <span class="math">
+                        x(t) = v_{0x} t = 10t, \quad y(t) = v_{0y} t - \frac{1}{2} g t^2 = 10t - \frac{1}{2} g t^2
+                    </span>
+                </div>
+                where <span class="math">g</span> is the acceleration due to gravity.
+            </div>
+        
+            <div class="note-element note-subtitle">
+                Path of the Ball
+            </div>
+            <div class="note-element">
+                The path of the ball can be described by eliminating <span class="math">t</span> from the above equations. Solving the equation <span class="math">x(t) = 10t</span> for <span class="math">t</span> gives <span class="math">t = \frac{x}{10}</span>. Substituting this into the equation for <span class="math">y(t)</span> gives the path of the ball:
+                <div class="note-element formula counter note-element">
+                    <span class="math">
+                        y(x) = 10 \left(\frac{x}{10}\right) - \frac{1}{2} g \left(\frac{x}{10}\right)^2 = x - \frac{1}{200} g x^2
+                    </span>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class="note-box" title="Sample Problem #2 Solution">
+            <div class="note-title note-element">Sample Problem #2 </div>
+            <div class="note-elment note-answer-box">
+
+            <div class="note-element note-subtitle">
+                (a) Horizontal Range at 30 and 60 Degrees
+            </div>
+            <div class="note-element">
+                For <span class="math">\theta = 30^{\circ}</span> and <span class="math">\theta = 60^{\circ}</span>, we have:
+                <div class="note-element formula counter note-element">
+                    <span class="math">
+                        R_{30} = \frac{v_0^2}{g} \sin(60^{\circ}) = \frac{v_0^2}{g} \cdot \frac{\sqrt{3}}{2}, \quad R_{60} = \frac{v_0^2}{g} \sin(120^{\circ}) = \frac{v_0^2}{g} \cdot \frac{\sqrt{3}}{2}
+                    </span>
+                </div>
+                So, <span class="math">R_{30} = R_{60}</span>, which shows that the horizontal range at <span class="math">30^{\circ}</span> and <span class="math">60^{\circ}</span> is the same.
+            </div>
+
+            <div class="note-element note-subtitle">
+                (b) Maximum Horizontal Range
+            </div>
+            <div class="note-element">
+                To find the angle <span class="math">\theta</span> that maximizes the range <span class="math">R</span>, we can take the derivative of <span class="math">R</span> with respect to <span class="math">\theta</span> and set it equal to zero. This will give us the values of <span class="math">\theta</span> at which <span class="math">R</span> is at a maximum or minimum.
+                <div class="note-element formula counter note-element">
+                    <span class="math">
+                        \frac{dR}{d\theta} = \frac{v_0^2}{g} \cos(2\theta) \cdot 2
+                    </span>
+                </div>
+                Setting this equal to zero gives:
+                <div class="note-element formula counter note-element">
+                    <span class="math">
+                        \cos(2\theta) = 0
+                    </span>
+                </div>
+                Solving for <span class="math">\theta</span> gives:
+                <div class="note-element formula counter note-element">
+                    <span class="math">
+                        \theta = \frac{\pi}{4}, \frac{3\pi}{4}
+                    </span>
+                </div>
+                which correspond to <span class="math">45^{\circ}</span> and <span class="math">135^{\circ}</span>. However, since the launch angle <span class="math">\theta</span> is typically between <span class="math">0^{\circ}</span> and <span class="math">90^{\circ}</span>, we find that the range <span class="math">R</span> is maximized at <span class="math">\theta = 45^{\circ}</span>.
+            </div>
+            </div>
+        </div>  
+        <div class="note-box" title="Sample Problem #3 Solution">
+            <div class="note-title note-element">Sample Problem #3 </div>
+            <div class="note-elment note-answer-box">
+
+            <div class="note-element note-subtitle">
+                Method 2: Use the equation of path to find the maximum height.
+            </div>
+            <div class="note-element">
+                The maximum height can also be found using the equation of the path of the projectile. The path of the projectile is a parabola, and the maximum height is reached at the vertex of the parabola. The <span class="math">x</span>-coordinate of the vertex of a parabola given by <span class="math">y = ax^2 + bx + c</span> is <span class="math">-\frac{b}{2a}</span>. For the path of the projectile, <span class="math">a = -\frac{g}{2v_{0}^2\cos^2(\theta)}</span> and <span class="math">b = \tan(\theta)</span>. Therefore, the maximum height is reached when <span class="math">x = \frac{v_{0}^2\sin(\theta)\cos(\theta)}{g}</span>. Substituting this into the equation for <span class="math">y</span> gives the maximum height:
+                <div class="note-element formula counter note-element">
+                    <span class="math">
+                        y_{\text{max}} = x\tan(\theta) - \frac{g}{2v_{0}^2\cos^2(\theta)} x^2 \\= \Big(\frac{v_{0}^2\sin(\theta)\cos(\theta)}{g} \Big)\Big(\frac{\sin{\theta}}{\cos{\theta}}\Big) - \Big(\frac{g}{2v_{0}^2\cos^2(\theta)}\Big)\Big(\frac{v_{0}^2\sin(\theta)\cos(\theta)}{g}\Big)^2=\frac{v_{0}^2\sin^2(\theta)}{2g}
+                    </span>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class="note-box" title="Sample Problem #4 Solution">
+            <div class="note-title note-element">Sample Problem #4 </div>
+            <div class="note-elment note-answer-box">
+            <div class="note-element note-subtitle">
+                Initial Conditions
+            </div>
+            <div class="note-element">
+                At the moment Andrew fires, both the bullet and the object are at the same height, say <span class="math">y_0</span>. The bullet has an initial velocity <span class="math">v_0</span> and is fired at an angle <span class="math">\alpha</span> to the horizontal.
+            </div>
+        
+            <div class="note-element note-subtitle">
+                Equations of Motion
+            </div>
+            <div class="note-element">
+                The horizontal and vertical positions of the bullet after time <span class="math">t</span> are given by:
+                <div class="note-element formula counter note-element">
+                    <span class="math">
+                        x_{\text{bullet}}(t) = v_{0} \cos(\alpha) t, \quad y_{\text{bullet}}(t) = v_0 \sin(\alpha) t - \frac{1}{2} g t^2
+                    </span>
+                </div>
+                The vertical position of the object falling under gravity after time <span class="math">t</span> is given by <span class="math">y_{\text{object}}(t) = y_{0_{\text{object}}} - \frac{1}{2} g t^2</span>.
+            </div>
+        
+            <div class="note-element note-subtitle">
+                 Collision Condition
+            </div>
+            <div class="note-element">
+                For the bullet to hit the object, their vertical positions must be equal at some time <span class="math">t</span>. Setting the vertical position equations equal to each other gives:
+                <div class="note-element formula counter note-element">
+                    <span class="math">
+                        y_{\text{object}}(t) = y_{\text{bullet}}(t) \Rightarrow y_{0_{\text{object}}} - \frac{1}{2} g t^2 = v_0 \sin(\alpha) t - \frac{1}{2} g t^2
+                    </span>
+                </div>
+                Simplifying this equation gives the condition on the angle <span class="math">\alpha</span> for which the bullet will hit the object:
+                <div class="note-element formula counter note-element">
+                    <span class="math">
+                        \sin(\alpha) = \frac{y_{0_{\text{object}}}}{v_0 t_{\text{collision}}}
+                    </span>
+                </div>
+                If we aim to the target, <span class="math">\sin(\alpha) = \frac{y_{0_{\text{object}}}}{x_{0_{\text{object}}}} = \frac{y_{0_{\text{object}}}}{v_0 t_{\text{collision}}}</span>, then it is clear that Andrew can always hit the object if he aims at the object and shoots at the time it starts falling.
+            </div>
+            </div>
+        </div>
+        <div class="note-box" title="Sample Problem #5 Solution">
+            <div class="note-title note-element">Sample Problem #5 </div>
+            <div class="note-element note-answer-box">
+                <div class="note-element note-subtitle">
+                    Initial Conditions
+                </div>
+                <div class="note-element">
+                    The archer is located at <span class="math">R = 0 \hat{i} + 2 \hat{j}</span> and the target is located at <span class="math">R = 20 \hat{i} + 2 \hat{j}</span>. The magnitude of the initial velocity is <span class="math">v_0 = 20</span>.
+                </div>
+            
+                <div class="note-element note-subtitle">
+                    Equations of Motion
+                </div>
+                <div class="note-element">
+                    The horizontal and vertical positions of the arrow after time <span class="math">t</span> are given by:
+                    <div class="note-element formula counter note-element">
+                        <span class="math">
+                            x_{\text{arrow}}(t) = v_{0} \cos(\theta) t, \quad y_{\text{arrow}}(t) = 2+v_0 \sin(\theta) t - \frac{1}{2} g t^2
+                        </span>
+                    </div>
+                    The horizontal and vertical positions of the target are given by <span class="math">x_{\text{target}} = 20, y_{\text{target}} = 2</span>.
+                </div>
+            
+                <div class="note-element note-subtitle">
+                     Collision Condition
+                </div>
+                <div class="note-element">
+                    For the arrow to hit the target, their positions must be equal at some time <span class="math">t</span>. Setting the position equations equal to each other gives:
+                    <div class="note-element formula counter note-element">
+                        <span class="math">
+                            x_{\text{target}} = x_{\text{arrow}}(t) \Rightarrow 20 = v_{0} \cos(\theta) t
+                        </span>
+                    </div>
+                    <div class="note-element formula counter note-element">
+                        <span class="math">
+                            y_{\text{target}} = y_{\text{arrow}}(t) \Rightarrow 2 = 2 + v_0 \sin(\theta) t - \frac{1}{2} g t^2
+                        </span>
+                    </div>
+                    Solving these equations gives the conditions on the angle <span class="math">\theta</span> and the time <span class="math">t</span> for which the arrow will hit the target:
+                    <div class="note-element formula counter note-element">
+                        <span class="math">
+                            \theta =\frac{1}{2} \arcsin(\frac{g}{v_0})
+                        </span>
+                    </div>
+                    <div class="note-element formula counter note-element">
+                        <span class="math">
+                            t = \frac{x}{v_0 \cdot cos(\theta)}
+                        </span>
+                    </div>
+                    The first possible angle (θ₁) the archer needs to use to hit the target is approximately 1.314 radians and the arrow will hit the target after approximately 3.94 seconds.
+                    The second possible angle (θ₂) the archer needs to use to hit the target is approximately 0.256 radians and the arrow will hit the target after approximately 1.03 seconds.
+                </div>
+            </div>
+        </div>
+        <div class="note-box " title="Exercises">
+            <div class="note-title note-element">Exercises #1 to #6</div>
+            <div class="note-elment">
+                You can find the answers to these exercises in Halliday's book.
+            </div>
+        </div>
+    </div>
+</body>
+</html>
