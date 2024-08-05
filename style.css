@@ -91,9 +91,15 @@ body{
 .note-answer-box.small{
     height: 150px;
 }
+.note-answer-box.small-200{
+    height: 200px;}
 
 .note-answer-box.medium{
     height: 250px;
+}
+
+.note-answer-box.medium-300{
+    height: 300px;
 }
 
 .note-answer-box.large{
@@ -103,7 +109,7 @@ body{
     height: 400px;
 }
 .note-answer-box.XL{
-    height: 900px;
+    height: 850px;
 }
 .note-answer-box.question:before{
     content: "Sol .";
@@ -162,7 +168,7 @@ em{
     color: #5252FF;
 }
 .em3{
-    color: #52FF52;
+    color: #d438e5
 }
 
 br{
@@ -202,3 +208,5 @@ br{
     background-color: #fff154;
 }
 
+a{color: #5252FF;}
+a:visited{color: #5252FF;}
