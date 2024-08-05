@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AP-07: Uniform Circular Motion" title="AP-05"> 
+    <meta name="author" content="YC Chung" title="YC Chung">    
+    <title>AP-07: Uniform Circular Motion</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.13.11/katex.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.13.11/katex.min.js"></script>
+    <script>
+        // use KaTeX to render all .math elements
+        document.addEventListener("DOMContentLoaded", function() {
+            document.querySelectorAll(".math").forEach(function(e) {
+                katex.render(e.textContent, e, { displayMode: false });
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="unit" title="Circular Motion">
+        <div class="title">Uniform Circular Motion</div>
+        <div class="note-box" title="Introduction">
+            <div class="note-title note-element"> Introduction to Uniform Circular Motion </div>
+            <div class="note-element">
+                Uniform circular motion is a special type of two-dimensional motion in which an object moves in a fixed circular path at a constant speed. In this motion, although the magnitude of the speed is constant, its direction is constantly changing, so the object has a centripetal acceleration, always pointing towards the center of the circle.
+            </div>
+        </div>
+        <div class="note-box" title="Differential Relationships">
+            <div class="note-title note-element"> Differential Relationships </div>
+            <div class="note-element">
+                In uniform circular motion, we can express the position of the object as:
+            </div>
+            <div class="formula note-element counter">
+                <span class="math">r(t) = r  \cos(\omega t) \hat{i} + r  \sin(\omega t) \hat{j}</span>
+            </div>
+            <div class="note-element">
+                Where <span class="math">r</span> is the radius of the circular motion, <span class="math">\omega</span> is the angular velocity, representing the speed of the object's rotation. When the variation of <span class="math"> \omega t </span> is <span class="math">2\pi</span>, the object moves one circle along the circular motion, so we can also express the period as <span class="math">T = \frac{2\pi}{\omega}</span>.
+            </div>
+            <div class="note-element">
+                The velocity is the derivative of the position with respect to time, so we can get:
+            </div>
+            <div class="formula note-element counter">
+                <span class="math">v(t) = \frac{dr(t)}{dt} = -r \omega \sin(\omega t) \hat{i} + r \omega \cos(\omega t) \hat{j}</span>
+            </div>
+            <div class="note-element">
+                The acceleration is the derivative of the velocity with respect to time, so we can get:
+            </div>
+            <div class="formula note-element counter">
+                <span class="math">a(t) = \frac{dv(t)}{dt} = -r \omega^2 \cos(\omega t) \hat{i} - r \omega^2 \sin(\omega t) \hat{j}</span>
+            </div>
+            <div class="note-element">
+                From equation (3) we can see that the direction of acceleration is completely opposite to the direction of position, it is a vector pointing to the center, we can also call it centripetal acceleration.
+            </div>
+        </div>
+        <div class="note-box" title = "Sample Problem #1">
+            <div class="note-title note-element"> Sample Problem #1 </div>
+            <div class="note-element">
+                Three small balls are each suspended from three ropes performing uniform circular motion, and the radii are respectively <span class="math"> r , 2r , 3r</span>. If the angular velocities of the three small balls are <span class="math"> 3\omega , 2\omega , \omega</span> respectively, write out the position, velocity, and acceleration of the three small balls as a function of time.
+            </div>
+            <div class="note-element note-answer-box small question" style="height: 70px"></div>
+        </div>
+        <div class="note-box" title = "Sample Problem #1">
+            <div class="note-element note-answer-box large-400"></div>
+        </div>
+        <div class="note-box" title="Quantities of Each Physical Quantity">
+            <div class="note-title note-element"> Quantities of Each Physical Quantity </div>
+            <div class="note-element">
+                In uniform circular motion, the magnitude of the velocity can be easily obtained from equation (2) as shown in the following formula:
+            </div>
+            <div class="formula note-element counter">
+                <span class="math">v = r \omega</span>
+            </div>
+            <div class="note-element">
+                We can also use a similar concept to get the magnitude of acceleration, as shown in the following formula:
+            </div>
+            <div class="formula note-element counter">
+                <span class="math">a = r \omega^2</span>
+            </div>
+            <div class="note-element">
+                We can also get the relationship between the magnitude of velocity and acceleration from equations (5) and (6):
+            </div>
+            <div class="formula note-element counter">
+                <span class="math">a = \frac{v^2}{r}</span>
+            </div>
+            <div class="note-element">
+                From equation (4) we can also express the period as
+            </div>
+            <div class="formula note-element counter">
+                <span class="math">T = \frac{2\pi}{\omega} = \frac{2\pi r}{v}</span>
+            </div>
+            <div class="note-element">
+                From the above formula, we can also see that the physical meaning of the period can also be expressed as the distance of one circle divided by the magnitude of the velocity.
+            </div>
+        </div>      
+        <div class="note-box" title="Sample Problem #2">
+            <div class="note-title note-element"> Sample Problem #2 </div>
+            <div class="note-element">
+                A car is moving in a circular path of radius 500 meters at a constant speed of 20 m/s. Answer the following questions:
+                (a) What is the car's angular velocity?
+                (b) What is the car's centripetal acceleration?
+                (c) If the car continues to move at this speed, how long will it take to complete one full circle?
+            </div>
+            <div class="note-element note-answer-box question large-400"></div>
+        </div>
+        
+        
+    </div>
+    
+    <div class="unit" title="Exercises">
+        <div class="title">Exercises</div>
+        <div class="note-box" title="Exercise #1">
+            <div class="note-title note-element">
+                Exercise #1 [halliday 4.57]
+            </div>
+            <div class="note-element note-answer-box question large">
+            </div>
+        </div>
+        <div class="note-box" title="Exercise #2">
+            <div class="note-title note-element">
+                Exercise #2 [halliday 4.63]
+            </div>
+            <div class="note-element note-answer-box question large">
+            </div>
+        </div>
+        <div class="note-box" title="Exercise #3">
+            <div class="note-title note-element">
+                Exercise #3 [halliday 4.107]
+            </div>
+            <div class="note-element note-answer-box question large">
+            </div>
+        </div>
+    </div>
+    <div class="unit" title="Solutions">
+        <div class="title">Solutions</div>
+        <div class="note-box" title="Sample Problem #1 Solution">
+            <div class="note-title note-element">Sample Problem #1</div>
+            <div class="note-element note-answer-box">
+                <div class="note-element note-subtitle">
+                    Position Over Time
+                </div>
+                <div class="note-element">
+                    The position of the balls at any time <span class="math">t</span> can be represented by the following equations:
+                    <div class="note-element formula counter note-element">
+                        <span class="math">
+                            \vec{r}_1(t) = r \cos(3\omega t) \hat{i} + r \sin(3\omega t) \hat{j}\\
+                            \vec{r}_2(t) = 2r \cos(2\omega t) \hat{i} + 2r \sin(2\omega t) \hat{j}\\
+                            \vec{r}_3(t) = 3r \cos(\omega t) \hat{i} + 3r \sin(\omega t) \hat{j}
+                        </span>
+                    </div>
+                </div>
+        
+                <div class="note-element note-subtitle">
+                    Velocity Over Time
+                </div>
+                <div class="note-element">
+                    The velocity of the balls at any time <span class="math">t</span> can be represented by the following equations:
+                    <div class="note-element formula counter note-element">
+                        <span class="math">
+                            \vec{v}_1(t) = -r 3\omega \sin(3\omega t) \hat{i} + r 3\omega \cos(3\omega t) \hat{j}\\
+                            \vec{v}_2(t) = -2r 2\omega \sin(2\omega t) \hat{i} + 2r 2\omega \cos(2\omega t) \hat{j}\\
+                            \vec{v}_3(t) = -3r \omega \sin(\omega t) \hat{i} + 3r \omega \cos(\omega t) \hat{j}
+                        </span>
+                    </div>
+                </div>
+        
+                <div class="note-element note-subtitle">
+                    Acceleration Over Time
+                </div>
+                <div class="note-element">
+                    The acceleration of the balls at any time <span class="math">t</span> can be represented by the following equations:
+                    <div class="note-element formula counter note-element">
+                        <span class="math">
+                            \vec{a}_1(t) = -r (3\omega)^2 \cos(3\omega t) \hat{i} - r (3\omega)^2 \sin(3\omega t) \hat{j}\\
+                            \vec{a}_2(t) = -2r (2\omega)^2 \cos(2\omega t) \hat{i} - 2r (2\omega)^2 \sin(2\omega t) \hat{j}\\
+                            \vec{a}_3(t) = -3r \omega^2 \cos(\omega t) \hat{i} - 3r \omega^2 \sin(\omega t) \hat{j}
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="note-box" title="Sample Problem #2 Solution">
+            <div class="note-title note-element">Sample Problem #2</div>
+            <div class="note-element note-answer-box">
+                <div class="note-element note-subtitle">
+                    (a) Angular Velocity
+                </div>
+                <div class="note-element">
+                    The angular velocity <span class="math">\omega</span> of the car can be calculated using the formula:
+                    <div class="note-element formula counter note-element">
+                        <span class="math">
+                            \omega = \frac{v}{r}
+                        </span>
+                    </div>
+                    where <span class="math">v = 20 \, \text{m/s}</span> is the speed of the car and <span class="math">r = 500 \, \text{m}</span> is the radius of the circular path. Substituting these values gives <span class="math">\omega = \frac{20}{500} = 0.04 \, \text{s}^{-1}</span>.
+                </div>
+        
+                <div class="note-element note-subtitle">
+                    (b) Centripetal Acceleration
+                </div>
+                <div class="note-element">
+                    The centripetal acceleration <span class="math">a_c</span> of the car can be calculated using the formula:
+                    <div class="note-element formula counter note-element">
+                        <span class="math">
+                            a_c = \omega^2 r
+                        </span>
+                    </div>
+                    where <span class="math">\omega = 0.04 \, \text{s}^{-1}</span> is the angular velocity and <span class="math">r = 500 \, \text{m}</span> is the radius of the circular path. Substituting these values gives <span class="math">a_c = (0.04)^2 \times 500 = 0.8 \, \text{m/s}^2</span>.
+                </div>
+        
+                <div class="note-element note-subtitle">
+                    (c) Time to Complete One Full Circle
+                </div>
+                <div class="note-element">
+                    The time <span class="math">T</span> it takes for the car to complete one full circle can be calculated using the formula:
+                    <div class="note-element formula counter note-element">
+                        <span class="math">
+                            T = \frac{2\pi r}{v}
+                        </span>
+                    </div>
+                    where <span class="math">v = 20 \, \text{m/s}</span> is the speed of the car and <span class="math">r = 500 \, \text{m}</span> is the radius of the circular path. Substituting these values gives <span class="math">T = \frac{2\pi \times 500}{20} = 157.08 \, \text{s}</span>.
+                </div>
+            </div>
+        </div>
+        <div class="note-box" title="Exercises">
+            <div class="note-title note-element">Exercises #1 to #3</div>
+            <div class="note-element">
+                You can find the answers to these exercises in Halliday's book.
+            </div>
+        </div>
+    </div>
+</body>
+</html>
