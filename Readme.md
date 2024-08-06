@@ -10,8 +10,8 @@ This repository is about a lecture follow the [Halliday, D., Resnick, R., & Walk
 - [AP-02 : Motion Along a Straight Line : Position and Velocity](AP-02/AP-02_%20Motion%20Along%20a%20Straight%20Line%20_%20Position%20and%20Velocity.pdf)
 - [AP-03 : Motion Along a Straight Line : Velocity and Acceleration](AP-03/AP-03_%20Motion%20Along%20a%20Straight%20Line%20_%20Instantaneous%20Velocity%20and%20Acceleration.pdf)
 - [AP-04 : Motion Along a Straight Line : Constant Acceleration](AP-04/AP-04_%20Motion%20Along%20a%20Straight%20Line%20_%20Constant%20Acceleration.pdf)
-- [AP-05 : Two and Three Dimensional Motion ](AP-05/)
-- [AP-06 : Projectile Motion ](AP-06/)
+- [AP-05 : Two and Three Dimensional Motion ](AP-05/AP-05_%20Two%20and%20Three%20Dimensional%20Motion.pdf)
+- [AP-06 : Projectile Motion ](AP-06/AP-06_%20Projectile%20Motion.pdf)
 - [AP-07 : Uniform Circular Motion](AP-07/)
 
 ## Author
