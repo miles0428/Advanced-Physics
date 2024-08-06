@@ -88,6 +88,9 @@ body{
     padding: 10px;
 }
 
+.note-answer-box.tiny{
+    height: 80px;
+}
 .note-answer-box.small{
     height: 150px;
 }

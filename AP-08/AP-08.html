@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AP-08: Relative Motion " title="AP-08"> 
+    <meta name="author" content="YC Chung" title="YC Chung">    
+    <title>AP-08: Relative Motion</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.13.11/katex.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.13.11/katex.min.js"></script>
+    <script>
+        // use KaTeX to render all .math elements
+        document.addEventListener("DOMContentLoaded", function() {
+            document.querySelectorAll(".math").forEach(function(e) {
+                katex.render(e.textContent, e, { displayMode: false });
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="unit" title="Relative Motion">
+        <div class="title">Relative Motion</div>
+
+        <div class="note-box" title="Introduction">
+            <div class="note-title note-element"> Relative Motion </div>
+            <div class="note-element">
+                If there are two observers observing the motion of an object, one observer is stationary, and the other observer is moving in one direction, then these two observers will see different situations of the object's motion. In this case, we call it relative motion. We can call the perspectives of the two observers as <em class="em1">frames</em>, and <em class="em2">relative motion
+                </em> is our mutual conversion of an object in the frames of these two observers.
+            </div>
+        </div>
+        <div class="note-box" title="One-dimensional relative motion">
+            <div class="note-title note-element"> One-Dimensional Relative Motion </div>
+            <div class="note-element note-subtitle"> How Does One-Dimensional Relative Motion Describe Position</div>
+            <div class="note-element">
+                One-dimensional relative motion, as the name suggests, is a conversion of an object in two one-dimensional frames, and both observers can only see what happens on the line. In this case, we can use the following formula to describe the frame conversion observed by two observers under one-dimensional frames.
+            </div>
+            <div class="note-element formula counter note-element">
+                <span class="math">
+                    x_{oa}= x_{ob} + x_{ba}
+                </span>
+            </div>
+            <div class="note-element">
+                Where <span class="math">x_{oa}</span> is used to represent the position of the object observed by observer A, <span class="math">x_{ob}</span> is used to represent the position of the object observed by observer B, and <span class="math">x_{ba}</span> is used to represent the displacement of observer B in the frame of observer A (or the position of observer B in the frame of observer A).
+            </div>
+            <div class="note-element note-answer-box small"></div>
+
+            <div class="note-element note-subtitle"> How Does One-Dimensional Relative Motion Describe Velocity</div>
+            <div class="note-element">
+                In one-dimensional relative motion, we can differentiate <span class="math">x_{oa}</span> with respect to time to get the velocity <span class="math">v_{oa}</span> of the object in the frame of observer A.
+            </div>
+
+            <div class="note-element formula counter note-element">
+                <span class="math">
+                    v_{oa} = \frac{dx_{oa}}{dt} = \frac{d(x_{ob}+x_{ba})}{dt}
+                </span>
+            </div>
+
+            <div class="note-element">
+                According to the properties of differentiation, we can differentiate the right side of the above equation with respect to time to get the following equation.
+            </div>
+        </div>
+        <div class="note-box" title="One-dimensional relative motion">
+            <div class="note-element formula counter note-element">
+                <span class="math">
+                    v_{oa} = \frac{dx_{oa}}{dt} = \frac{d(x_{ob}+x_{ba})}{dt} = \frac{dx_{ob}}{dt} + \frac{dx_{ba}}{dt} = v_{ob} + v_{ba}
+                </span>
+            </div>
+            <div class="note-element">
+                From the above equation, we can get that the velocity <span class="math">v_{oa}</span> of the object in the frame of observer A is the sum of the velocity <span class="math">v_{ob}</span> of the object observed by observer B and the velocity <span class="math">v_{ba}</span> of observer B in the frame of observer A, which is similar to the description of position.
+            </div>
+            <div class="note-element note-subtitle"> How Does One-Dimensional Relative Motion Describe Acceleration</div>
+            <div class="note-element">
+                Similarly, we can also differentiate the description of acceleration to get the acceleration <span class="math">a_{oa}</span> of the object in the frame of observer A as shown in the following equation.
+            </div>
+            <div class="note-element formula counter note-element">
+                <span class="math">
+                    a_{oa} = \frac{dv_{oa}}{dt} = \frac{d(v_{ob}+v_{ba})}{dt} = \frac{dv_{ob}}{dt} + \frac{dv_{ba}}{dt} = a_{ob} + a_{ba}
+                </span>
+            </div>
+            <div class="note-element">
+                From the above equation, we can get that the acceleration <span class="math">a_{oa}</span> of the object in the frame of observer A is the sum of the acceleration <span class="math">a_{ob}</span> of the object observed by observer B and the acceleration <span class="math">a_{ba}</span> of observer B in the frame of observer A, which is similar to the description of position and velocity.
+            </div>
+        </div>
+        <div class="note-box" title="Sample Problem #1">
+            <div class = "note-title note-element"> Sample Problem #1 </div>
+            <div class = "note-element">
+                A photographer is observing a train next to the railway. Now there is a train traveling north at a speed of 30 m/s. There is a baseball player on the train, running north at an initial speed of 0m/s and accelerating at 2m/s. What is the velocity of the baseball player observed by the photographer in the third second? What is the displacement of the baseball player observed by the photographer in the third second?
+            </div>
+            <div class="note-element note-answer-box large question"></div>
+        </div>
+        <div class="note-box" title="Sample Problem #2">
+            <div class="note-title note-element"> Sample Problem #2 </div>
+            <div class="note-element">
+                There are two observers, A and B, observing a cheetah catching a hare. Observer B observes the cheetah’s velocity as 20m/s to the east, and observer A observes the cheetah’s velocity as 15m/s to the west. What is the relative velocity of observer A and observer B? If observer B finds the hare is moving to the east with a velocity of 25m/s, what is the velocity of the hare in the frame of observer A?
+            </div>
+            <div class="note-element note-answer-box small-200 question"></div>
+        </div>
+        <div class="note-box" title="Multi-dimensional relative motion">
+            <div class="note-title note-element"> Multi-Dimensional Relative Motion </div>
+            <div class="note-element note-subtitle">
+                How does multi-dimensional relative motion describe position
+            </div>   
+            <div class="note-elment">
+                As mentioned in our previous unit, multi-dimensional motion can be represented in the form of vectors, so multi-dimensional relative motion can also be represented in the form of vectors. We can use vector addition to describe the position of multi-dimensional relative motion as shown in the following formula.
+            </div>
+            <div class="note-element formula counter note-element">
+                <span class="math">
+                    \vec{r}_{oa}= \vec{r}_{ob} + \vec{r}_{ba}
+                </span>
+            </div>
+            <div class="note-element note-answer-box small"></div>            
+            <div class="note-element"> 
+            Similar to the description of one-dimensional motion, we can simply replace the addition of positions with vector addition to get the position of multi-dimensional relative motion. Where <span class="math">\vec{r}_{ob}</span> represents the position of the object observed by observer B, <span class="math">\vec{r}_{ba}</span> represents the position of observer B observed by observer A, <span class="math">\vec{r}_{oa}</span> represents the position of the object observed by observer A.
+            </div>
+        </div>
+        <div class="note-box" title="Multi-dimensional relative motion">   
+            <div class="note-element note-subtitle">
+                How does multi-dimensional relative motion describe velocity
+            </div>
+            <div class="note-element">
+                As in the previous method, we can differentiate <span class="math">\vec{r}_{oa}</span> to get the velocity <span class="math">\vec{v}_{oa}</span> of multi-dimensional relative motion as shown in the following formula.
+            </div>
+            <div class="note-element formula counter note-element">
+                <span class="math">
+                    \vec{v}_{oa}= \frac{d\vec{r}_{oa}}{dt} = \frac{d(\vec{r}_{ob}+\vec{r}_{ba})}{dt}
+                </span>
+            </div>            
+            <div class="note-element">
+                Similarly, in vectors, we can also differentiate two added vectors separately, as shown in the following formula.
+            </div>
+
+            <div class="note-element formula counter note-element">
+                <span class="math">
+                    \vec{v}_{oa}=\frac{d\vec{r}_{oa}}{dt} = \frac{d(\vec{r}_{ob}+\vec{r}_{ba})}{dt} = \frac{d\vec{r}_{ob}}{dt} + \frac{d\vec{r}_{ba}}{dt}=\vec{v}_{ob}+\vec{v}_{ba}
+                </span>
+            </div> 
+        
+            <div class="note-element">
+                In this way, we can get the velocity of multi-dimensional relative motion. The physical meaning is the same as that of one-dimensional relative motion. We can express the velocity of the object observed by observer A as the velocity of the object observed by observer B plus the velocity of observer B observed by observer A.
+            </div>
+            <div class="note-element note-subtitle">
+                How does multi-dimensional relative motion describe acceleration
+            </div>
+            <div class="note-element">
+                The same as before, we can also express the acceleration of the object observed by observer A as the acceleration of the object observed by observer B plus the acceleration of observer B observed by observer A, as shown in the following formula.
+            </div>
+            <div class="note-element formula counter note-element">
+                <span class="math">
+                    \vec{a}_{oa}=\frac{d\vec{v}_{oa}}{dt} = \frac{d(\vec{v}_{ob}+\vec{v}_{ba})}{dt} = \frac{d\vec{v}_{ob}}{dt} + \frac{d\vec{v}_{ba}}{dt}=\vec{a}_{ob}+\vec{a}_{ba}
+                </span>
+            </div>
+        </div>
+        <div class ="note-box" title="Sample Problem #3">
+            <div class="note-title note-element"> Sample Problem #3 [Halliday 4.75]</div>
+            <div class="note-element note-answer-box question large">
+            </div>
+        </div>
+        <div class="note-box" title="Sample Problem #4">
+            <div class="note-title note-element"> Sample Problem #4 </div>
+            <div class="note-element">
+                From the perspective of a pilot, when a bomber drops a bomb, the bomb appears to be a free fall straight down. Now the bomber is flying east at a speed of 300m/s and drops a bomb at a height of 1000 meters. A photographer on the ground is shooting the trajectory of the bomb drop. Please find out the relationship the position and the velocity of the bomb observed by the photographer over the time. What is the trajectory of the bomb shot by the photographer?
+            </div>
+            <div class="note-element note-answer-box question large-400">
+            </div>
+        </div>
+    </div>
+    
+    <div class="unit" title="Exercises">
+        <div class="title">Exercises</div>
+        <div class="note-box" title="Exercise #1">
+            <div class="note-title note-element">
+                Exercise #1 [halliday 4.69]
+            </div>
+            <div class="note-element note-answer-box question large">
+            </div>
+        </div>
+        <div class="note-box" title="Exercise #2">
+            <div class="note-title note-element">
+                Exercise #2 [halliday 4.71]
+            </div>
+            <div class="note-element note-answer-box question large">
+            </div>
+        </div>
+        <div class="note-box" title="Exercise #3">
+            <div class="note-title note-element">
+                Exercise #3 [halliday 4.73]
+            </div>
+            <div class="note-element note-answer-box question large">
+            </div>
+        </div>
+        <div class="note-box" title="Exercise #4">
+            <div class="note-title note-element">
+                Exercise #4 [halliday 4.81]
+            </div>
+            <div class="note-element note-answer-box question large">
+            </div>
+        </div>
+    </div>
+    <div class="unit" title="Solutions">
+        <div class="title">Solutions</div>
+        <div class="note-box" title="Sample Problem #1 Solution">
+            <div class="note-title note-element">Sample Problem #1</div>
+        </div>
+        <div class="note-box" title="Sample Problem #2 Solution">
+            <div class="note-title note-element">Sample Problem #2</div>
+            
+        </div>
+        <div class="note-box" title="Sample Problem #3 Solution">
+            <div class="note-title note-element">Sample Problem #3</div>
+            
+        </div>       
+        <div class="note-box" title="Sample Problem #4 Solution">
+            <div class="note-title note-element">Sample Problem #4</div>
+        </div> 
+        <div class="note-box" title="Exercises">
+            <div class="note-title note-element">Exercises #1 to #3</div>
+            <div class="note-element">
+                You can find the answers to these exercises in Halliday's book.
+            </div>
+        </div>
+    </div>
+</body>
+</html>

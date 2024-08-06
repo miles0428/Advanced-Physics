@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AP-12: Common Force Part I" title="AP-12"> 
+    <meta name="author" content="YC Chung" title="YC Chung">    
+    <title>AP-12: Common Force Part I</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.13.11/katex.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.13.11/katex.min.js"></script>
+    <script>
+        // use KaTeX to render all .math elements
+        document.addEventListener("DOMContentLoaded", function() {
+            document.querySelectorAll(".math").forEach(function(e) {
+                katex.render(e.textContent, e, { displayMode: false });
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="unit" title = "Common Force Part I">
+        <div class="title">Common Force Part I</div>
+        <div class = "note-box"  title = "Gravity">
+            <div class="note-title note-element">Gravity</div>
+            <div class="note-element">
+                Gravity is a concept of force, it describes the interaction between two objects with mass. For an object on Earth, we can consider gravity as the gravitational force that the Earth exerts on the object. Through experiments, we know that near the surface of the Earth, an object under the influence of gravity will accelerate, and its acceleration value is approximately <span class="math">g = 9.8 \ \rm{m/s^2}</span>. According to Newton's second law of motion, we can deduce that the gravity an object experiences near the surface of the Earth is <span class="math">F = m  g</span>, where <span class="math">m</span> is the mass of the object.
+            </div>
+            <div class="note-subtitle note-element">Weight</div>
+            <div class="note-subbox">
+                <div>
+                <div class="note-element">
+                    The concept of weight is basically similar to gravity, but <span class="highlight">accurately speaking, weight refers to the reading on the scale, that is, the force received by the scale</span>. When an object is not affected by other external forces, its weight is equal to the gravity it experiences. We can record their
+                    relationship as follows:
+                    <div class="note-element formula counter">
+                        <span class="math">W = mg</span>
+                    </div>
+                    However, when an object is affected by other external forces, its weight will change accordingly. For example,suppose an object has a mass of <span class="math">m</span> and is affected by gravity and an upward external force<span class="math">F_{\text{up}}</span>, the force received by the scale will become <span class="math"> m g -F_{\text{up}}</span>, so the weight will also become <span class="math">W = m g - F_{\text{up}}</span>.
+                </div>
+                </div>
+                <div class="note-element note-answer-box medium" style="width: 100%;"></div>
+            </div>
+
+        </div>
+        <div class="note-box" title = "Sample Problem #1">
+            <div class="note-title note-element"> Sample Problem #1 </div>
+            <div class="note-element">
+                It is known that the weight of an object measured on the Alpha planet is 6 times that of the earth. If an object of weight <span class="math">m</span> is launched upward with the same initial velocity <span class="math">v_0</span>, what is the difference in the maximum height measured by the object on the earth and the Alpha planet?
+            </div>
+            
+            <div class="note-element note-answer-box question small-200" ></div>
+        </div>
+        <div class="note-box" title = "Sample Problem #2">
+            <div class="note-title note-element"> Sample Problem #2 </div>
+            <div class="note-element">
+                Suppose there is an object of mass m on the earth, moving downward with an acceleration of <span class="math">0.3g</span>, (a) what is the net force <span class="math">F_{\text{net}}</span> on the object? (b) What is the sum of the non-gravitational forces on the object? If the object moves upward with an acceleration of <span class="math">0.5g</span>, (c) what is the net force <span class="math">F_{\text{net}}</span> on the object? (d) What is the sum of the non-gravitational forces on the object?
+            </div>
+            <div class="note-element note-answer-box question large"></div>
+        </div>
+        <div class = "note-box"  title = "Normal Force">
+            <div class="note-title note-element">Normal Force</div>
+            <div class="note-element">
+                Normal force is a concept of force, it describes the force that a surface exerts on an object with which it is in contact. Namely, it is always perpendicular to the surface. 
+            </div>
+            <div class="note-element"> 
+                For an object resting on a flat surface, the normal force counteracts the weight of the object. The normal force can be calculated as <span class="math">N = m  g</span>, where <span class="math">m</span> is the mass of the object and <span class="math">g</span> is the acceleration due to gravity.
+            </div>
+            <div class="note-element note-answer-box small-200"></div>
+        </div>
+        <div class="note-box" title = "Sample Problem #3">
+            <div class="note-title note-element"> Sample Problem #3 </div>
+            <div class="note-element">
+                There is a block of mass <span class="math">m</span> placed on a horizontal table, (a) what is the force exerted by the block on the horizontal table? (b) What is the normal force exerted by the horizontal table on the block? (c) If the table and the block move together at a constant speed on the horizontal table, what is the net force on the block? What is the normal force on the block? (d) If the table and the block move together on the horizontal table with a downward acceleration of <span class="math">0.3g</span>, what is the net force on the block? What is the normal force on the block?
+            </div>
+            
+            <div class="note-element note-answer-box question medium"></div>
+        </div>
+        <div class = "note-box"  title = "Tension">
+            <div class="note-title note-element">Tension</div>
+            <div class="note-element">
+                Tension is a concept of force, it describes the pulling force transmitted by a string, cable, chain, or similar one-dimensional continuous object, or by each end of a rod, truss member, or similar three-dimensional object. Tension might also be described as the action-reaction pair of forces acting at each end of the said elements. Tension could depend on the length and elasticity of the object, and the force applied. The unit of tension is the same as the unit of force, that is, Newton (N).
+            </div>
+            <div class="note-subtitle note-element">Light String</div>
+            <div class="note-subbox">
+                <div class="note-element">
+                    In the context of a light string, the term <em class="em1">light</em> refers to the string being <em class="em1">massless or of negligible mass</em>. When a force is applied to such a string, it can be assumed that the tension throughout the string is uniform. This is because a light string does not have its own weight to affect the tension. Therefore, the tension at one end of the string is equal to the tension at the other end.
+                </div>
+                <div class="note-element note-answer-box small-200" style="width: 250%;"></div>
+            </div>
+        </div>
+        <div class="note-box" title = "Sample Problem #4">
+            <div class="note-title note-element"> Sample Problem #4 </div>
+            <div class="note-element">
+                There is a block with a mass of 0.5kg. Now it is hung from the ceiling with a light rope. The mass of the rope can be ignored. If the block is at rest, what is the tension of the rope?
+            </div>
+            <div class="note-element note-answer-box question medium"></div>
+        </div>
+        <div class="note-box" title = "Sample Problem #5">
+            <div class="note-title note-element"> Sample Problem #5 </div>
+            <div class="note-element">
+                There are two blocks with weights of 0.5kg and 1kg respectively. Now they are strung on the ceiling with a light rope. The order is that the heavier block is on the lighter block, and the mass of the rope can be ignored. If the blocks are at rest, answer the following questions:
+                (a) What is the tension of the rope connecting the ceiling and the blocks? (b) What is the tension of the rope between the two blocks?
+            </div>
+            
+            <div class="note-element note-answer-box question large"></div>
+        </div>
+    </div>  
+    <div class="unit" title="Exercises">
+        <div class="title">Exercises</div>
+        <div class="note-box" title="Exercise #1 [Halliday 5.86]">
+            <div class="note-title
+            note-element">
+                Exercise #1 [Halliday 5.86]
+            </div>
+            <div class="note-element note-answer-box question large">
+            </div>
+        </div>
+        <div class="note-box" title="Exercise #2 [Halliday 5.13]">
+            <div class="note-title note-element">
+                Exercise #2 [Halliday 5.13]
+            </div>
+            <div class="note-element note-answer-box question large">
+            </div>
+        </div>
+        <div class="note-box" title="Exercise #3 [Halliday 5.14]">
+            <div class="note-title note-element">
+                Exercise #3 [Halliday 5.14]
+            </div>
+            <div class="note-element note-answer-box question large">
+
+            </div>
+        </div>
+        <div class="note-box" title="Exercise #4 [Halliday 5.15]">
+            <div class="note-title note-element">
+                Exercise #4 [Halliday 5.15]
+            </div>
+            <div class="note-element note-answer-box question large">
+
+            </div>
+        </div>
+        <div class="note-box" title="Exercise #6 [Halliday 5.93]">
+            <div class="note-title
+            note-element">
+                Exercise #6 [Halliday 5.93]
+            </div>
+            <div class="note-element note-answer-box question large">
+            </div>
+        </div>
+    </div>
+    <div class="unit" title = "Solutions">
+        <div class="title">Solutions</div>
+    </div>    
+</body>
+</html>
