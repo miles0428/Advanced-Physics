@@ -13,6 +13,7 @@ This repository is about a lecture follow the [Halliday, D., Resnick, R., & Walk
 - [AP-05 : Two and Three Dimensional Motion ](AP-05/AP-05_%20Two%20and%20Three%20Dimensional%20Motion.pdf)
 - [AP-06 : Projectile Motion ](AP-06/AP-06_%20Projectile%20Motion.pdf)
 - [AP-07 : Uniform Circular Motion](AP-07/)
+- [AP-08 : Relative Motion](AP-08/AP-08_%20Relative%20Motion.pdf)
 
 ## Author
 The author of this repository is YC Chung.
