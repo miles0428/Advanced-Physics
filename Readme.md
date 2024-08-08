@@ -18,7 +18,7 @@ This repository is about a lecture follow the [Halliday, D., Resnick, R., & Walk
 ### Force
 - [AP-09 : Force and Force Balance in One-Dimensional Systems](AP-09/AP-09_%20Force%20and%20Force%20Balance%20in%20One-Dimensional%20Systems.pdf)
 - [AP-10 : Force and Force Balance in Multi-Dimensional Systems (Editing)](AP-10/)
-- [AP-11 : Newton's Laws of Motion (Editing) ](AP-11/)
+- [AP-11 : Newton's Laws of Motion](AP-11/AP-11_%20Newton's%20Laws%20of%20Motion.pdf)
 - [AP-12 : Common Forces (Editing)](AP-12/)
 - [AP-13 : Neton's Laws in One-Dimensional Systems (Editing)](AP-13/)
 - [AP-14 : Newton's Laws in Multi-Dimensional Systems (Editing)](AP-14/)
