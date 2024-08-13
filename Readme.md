@@ -20,7 +20,7 @@ This repository is about a lecture follow the [Halliday, D., Resnick, R., & Walk
 - [AP-10 : Force and Force Balance in Multi-Dimensional Systems (Editing)](AP-10/)
 - [AP-11 : Newton's Laws of Motion](AP-11/AP-11_%20Newton's%20Laws%20of%20Motion.pdf)
 - [AP-12 : Common Forces Part I](AP-12/AP-12_%20Common%20Force%20Part%20I.pdf)
-- [AP-13 : Apply Newton's Laws in One-Dimensional Systems (Editing)](AP-13/)
+- [AP-13 : Apply Newton's Laws in One-Dimensional Systems (Editing)](AP-13/AP-13_%20Apply%20Newton's%20Laws%20in%20One-Dimensional%20Systems.pdf)
 - [AP-14 : Apply Newton's Laws in Multi-Dimensional Systems (Editing)](AP-14/)
 
 ## Author
